@@ -1,0 +1,40 @@
+html, body{
+    font-family: "Roboto";
+}
+
+.floatLeft{
+    float: left;
+}
+
+.floatRight{
+    float: right;
+}
+
+.modernBlue{
+    color: #74A1E9;;
+}
+
+.modernGray{
+    color: #EFF1F2;
+}
+
+.line{
+    height: 2px;
+    width: 100vw;
+}
+
+#collaborate:before{
+    content: "Collaboration";
+    color: #74A1E9;
+}
+
+#gear{
+    height: 20px;
+    margin-left: 6px;
+}
+
+#peopleLogo{
+    height: 20px;
+    margin-right: 6px;
+}
+
