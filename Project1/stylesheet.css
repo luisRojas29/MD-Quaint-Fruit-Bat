@@ -23,12 +23,27 @@ html, body{
     width: 100%;
 }
 
+.names {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; /*This will need adjustment*/
+}
+
 .names li{
-    display: block;
+    display: inline-block;
+    width: 100%;
 }
 
 .names li:nth-child(even) { /*Make Even backgrounds gray*/
     background-color: #EFF1F2;
+}
+
+.names li span:nth-child(odd) {
+    float: left;
+}
+
+.names li span:nth-child(even) {
+    float: right;
 }
 
 #collaborate:before{
