@@ -20,7 +20,15 @@ html, body{
 
 .line{
     height: 2px;
-    width: 100vw;
+    width: 100%;
+}
+
+.names li{
+    display: block;
+}
+
+.names li:nth-child(even) { /*Make Even backgrounds gray*/
+    background-color: #EFF1F2;
 }
 
 #collaborate:before{
@@ -38,3 +46,6 @@ html, body{
     margin-right: 6px;
 }
 
+#rolesAndColors{
+    width: 80vw;
+}
