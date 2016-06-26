@@ -64,3 +64,18 @@ html, body{
 #rolesAndColors{
     width: 80vw;
 }
+
+#roles{
+    width: 45%;
+    float: left;
+}
+
+#roomName{
+    display: block;
+}
+
+#roomNameDetails{
+    display: block;
+    color: #BCBCBC;
+    font-size: 12px;
+}
