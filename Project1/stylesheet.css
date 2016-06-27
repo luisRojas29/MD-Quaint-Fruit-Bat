@@ -23,26 +23,27 @@ html, body{
     width: 100%;
 }
 
-.names {
+
+.userBox {
     list-style-type: none;
     margin: 0;
     padding: 0; /*This will need adjustment*/
 }
 
-.names li{
+.userBox li{
     display: inline-block;
     width: 100%;
 }
 
-.names li:nth-child(even) { /*Make Even backgrounds gray*/
+#namesBox li:nth-child(even) { /*Make Even backgrounds gray*/
     background-color: #EFF1F2;
 }
 
-.names li span:nth-child(odd) {
+.userBox li span:nth-child(odd) {
     float: left;
 }
 
-.names li span:nth-child(even) {
+.userBox li span:nth-child(even) {
     float: right;
 }
 
@@ -63,6 +64,7 @@ html, body{
 
 #rolesAndColors{
     width: 80vw;
+    margin: 0 auto;
 }
 
 #roles{
@@ -70,12 +72,14 @@ html, body{
     float: left;
 }
 
-#roomName{
-    display: block;
+#colors{
+    width: 45%;
+    float: right;
 }
 
-#roomNameDetails{
+.blockDetails{
     display: block;
+    width: 100%;
     color: #BCBCBC;
     font-size: 12px;
 }
