@@ -23,6 +23,13 @@ html, body{
     width: 100%;
 }
 
+.blockDetails{
+    display: block;
+    width: 100%;
+    color: #BCBCBC;
+    font-size: 12px;
+}
+
 
 .userBox {
     list-style-type: none;
@@ -77,9 +84,17 @@ html, body{
     float: right;
 }
 
-.blockDetails{
-    display: block;
-    width: 100%;
-    color: #BCBCBC;
-    font-size: 12px;
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #F4F5F7;
+    background-image: url(images/pencil.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80px;
+}
+
+select option{
+    
 }
