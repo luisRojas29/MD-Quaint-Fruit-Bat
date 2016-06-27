@@ -84,6 +84,11 @@ html, body{
     float: right;
 }
 
+/*Options for the select boxes.  Eventual design should use
+Text boxes which use stored user value and user can use any color
+but we need JavaScript for that.  For pure CSS selection we use a select box*/
+
+/*Default Options*/
 select{
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -93,8 +98,10 @@ select{
     background-repeat: no-repeat;
     background-size: contain;
     width: 80px;
+    border: none;
 }
 
 select option{
-    
+    text-align: center;
 }
+
