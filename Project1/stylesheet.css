@@ -44,12 +44,21 @@ html, body{
     width: 100%;
 }
 
-.userBox li span:nth-child(odd) {
+.userBox li span{
     float: left;
 }
 
-.userBox li span:nth-child(even) {
+.userBox li input{
     float: right;
+    text-align: right;
+    font-size: 14px;
+    border: none;
+    padding-right: 20px;
+    background-image: url(images/pencil.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: inherit; /*Keep Gray background on alt li*/
 }
 
 #namesBox li:nth-child(even) { /*Make Even backgrounds gray
@@ -113,5 +122,18 @@ select{
 
 option{
     text-align: center;
+}
+/*END Select Options*/
+
+/*Options for Modifiable Room Name*/
+#roomName{
+    border: none;
+    font-size: 16px;
+    background-image: url(images/pencil.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 110px;
+    height: 13px;
 }
 
