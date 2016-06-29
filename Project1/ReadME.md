@@ -36,12 +36,12 @@ After looking through the assignment again, we are supposed to create our UI/UX 
 #Current issues that probably can be fixed in HTML/CSS
 ---
 
-
-- Missing Text Boxes
+*Complete*
+~~- Missing Text Boxes
 	- Theres a lot of span/text areas that really should be text boxes and allow user input.  I was focused more on visual aspect and really just didn't pay enough attention to this.  The following text should be input type textbox:
 		- Room Name
 		- Names 1 - 4
-		- Roles (Product Manager, 3D Animator, Concept Artist, Product Manager)
+		- Roles (Product Manager, 3D Animator, Concept Artist, Product Manager)~~
 
 - Aligned divs
 	- The "roles" div and the "color" div should be equal total height.  This is currently "fixed" by manually changing the margins of id "colors."  Perhaps there's a more eloquent solution, though?
