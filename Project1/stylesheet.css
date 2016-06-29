@@ -84,8 +84,10 @@ html, body{
 }
 
 #rolesAndColors{ /*All 3 divs*/
+    display: block;
     width: 80vw;
     margin: 0 auto;
+    height: 300px;
 }
 
 #roles{ /*Bottom left div*/
@@ -94,14 +96,15 @@ html, body{
 }
 
 #roles li{
-    margin-top: 1.3px;
-    margin-bottom: 1.3px;
+    display: inline-block;
+    width: 100%;
 }
 
 #colors{ /*bottom right div*/
     width: 45%;
     float: right;
 }
+
 
 /*Options for the select boxes.  Eventual design should use
 Text boxes which use stored user value and user can use any color
@@ -136,4 +139,3 @@ option{
     width: 110px;
     height: 13px;
 }
-
