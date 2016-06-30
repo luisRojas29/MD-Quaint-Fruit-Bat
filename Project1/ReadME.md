@@ -33,7 +33,7 @@ After looking through the assignment again, we are supposed to create our UI/UX 
 		- Though it's not in the original design, when we come back to this for the JavaScript course we may consider adding some sort of color picker.
 
 ---
-#Current issues that probably can be fixed in HTML/CSS
+#Fixed Issues/Complete
 ---
 
 *Complete*
@@ -43,9 +43,14 @@ After looking through the assignment again, we are supposed to create our UI/UX 
 		- Names 1 - 4
 		- Roles (Product Manager, 3D Animator, Concept Artist, Product Manager)~~
 
-- Aligned divs
-	- The "roles" div and the "color" div should be equal total height.  This is currently "fixed" by manually changing the margins of id "colors."  Perhaps there's a more eloquent solution, though?
 
-			#roles li{
-			    margin-top: 1.3px;
-			    margin-bottom: 1.3px;
+*COMPLETE:  Fixed using Flexbox code*
+~~ Aligned divs
+The "roles" div and the "color" div should be equal total height.  This is currently "fixed" by manually changing the margins of id "colors."  Perhaps there's a more eloquent solution, though?~~
+
+---
+#Current issues that probably can be fixed in HTML/CSS
+---
+
+- Flexbox Browser Support
+	- Flexbox not supported is some browsers.  Normalize will help but browser testing will be especially necessary,
