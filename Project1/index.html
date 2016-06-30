@@ -2,6 +2,7 @@
 <html>
     <head>
         <title></title>
+        <link type="text/css" rel="stylesheet" href="normalize.css"/>
 	   <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,300italic|Roboto+Slab:400,300,700,100' rel='stylesheet' type='text/css'><!--Font-->
     </head>
@@ -13,55 +14,60 @@
             <span  class="floatRight">ROOM NAME</span>
             <img class="line" src="images/line.png"/>
         </div>
-        <div id="rolesAndColors">
-            <span class="blockWidth"><input id="roomName"  type="text" value="Room Name"/></span>
+        <div id="roomName">
+            <span><input type="text" value="Room Name"/></span>
             <span class="blockDetails">Change the details of the chatroom here</span>
             <br>
             <img class="line" src="images/line.png">
-            <div id="roles">
+        </div>
+        <div id="rolesAndColors">
+            <div class="floatLeft" id="addRoles">
                 <span class="floatLeft">ROLES</span>
-                <span class="floatRight modernBlue" id="addNew">+ add new</span>
-                <span class="floatLeft blockDetails">Latin Text Here</span>
+                <span class="modernBlue floatRight" id="addNew">+ add new</span>
+                <br>
+                <span class="blockDetails">Latin Text Here</span>
                 <img class="line" src="images/line.png"/>
-                <ul class="userBox" id="namesBox">
-                    <li><span>Name 1</span><input type="text" value="Product Manager"/></li>
-                    <li><span>Name 2</span><input type="text" value="3D Animator"/></li>
-                    <li><span>Name 3</span><input type="text" value="Concept Artist"/></li>
-                    <li><span>Name 4</span><input type="text" value="Product Manager"/></li>
-                </ul>
+                <div class="floatLeft" id="defineRoles">
+                    <span>Name 1</span>
+                    <input type="text" value="Product Manager"/>
+                    <span class="greyBack">Name 2</span>
+                    <input class="greyBack" type="text" value="3D Animator"/>
+                    <span>Name 3</span>
+                    <input type="text" value="Concept Artist"/>
+                    <span class="greyBack">Name 4</span>
+                    <input class="greyBack" type="text" value="Product Manager"/>
+                </div>
             </div>
-            <div id="colors">
+            <div class="floatRight" id="addColors">
                 <span class="floatLeft">COLORS</span>
                 <span class="floatRight modernBlue" id="addNew">Import <span class="modernGray">or</span> export</span>
                 <span class="floatLeft blockDetails">These colors are for the entire room</span>
                 <img class="line" src="images/line.png"/>
-                <ul class="userBox">
-                    <li>Application</li>
-                    <select class="floatRight">
-                        <option style="color: #DD77CB;" value="#DD77CB">#DD77CB</option>
-                        <option style="color: #6C84DC;" value="#6C84DC">#6C84DC</option>
-                        <option style="color: #8D8D8D;" value="#8D8D8D">#8D8D8D</option>
+                <div class="floatRight" id="defineColors">
+                    <span>Application</span>
+                     <select>
+                            <option style="color: #DD77CB;" value="#DD77CB">#DD77CB</option>
+                            <option style="color: #6C84DC;" value="#6C84DC">#6C84DC</option>
+                            <option style="color: #8D8D8D;" value="#8D8D8D">#8D8D8D</option>
                     </select>
                     <span class="blockDetails">The general color used for the application</span>
-                    <li>Box Value</li>
-                    <select class="floatRight">
-                        <option style="color: #DD77CB;" value="#DD77CB">#DD77CB</option>
-                        <option style="color: #6C84DC;" value="#6C84DC">#6C84DC</option>
-                        <option style="color: #8D8D8D;" value="#8D8D8D">#8D8D8D</option>
+                    <span>Box value</span>
+                    <select>
+                            <option style="color: #DD77CB;" value="#DD77CB">#DD77CB</option>
+                            <option style="color: #6C84DC;" value="#6C84DC">#6C84DC</option>
+                            <option style="color: #8D8D8D;" value="#8D8D8D">#8D8D8D</option>
                     </select>
                     <span class="blockDetails">The value of message backgrounds</span>
-                    <li>Text Color</li>
-                    <select class="floatRight">
-                        <option style="color: #DD77CB;" value="#DD77CB">#DD77CB</option>
-                        <option style="color: #6C84DC;" value="#6C84DC">#6C84DC</option>
-                        <option  style="color: #8D8D8D;" value="#8D8D8D">#8D8D8D</option>
+                    <span>Text Color</span>
+                    <select>
+                            <option style="color: #DD77CB;" value="#DD77CB">#DD77CB</option>
+                            <option style="color: #6C84DC;" value="#6C84DC">#6C84DC</option>
+                            <option style="color: #8D8D8D;" value="#8D8D8D">#8D8D8D</option>
                     </select>
                     <span class="blockDetails">The message text color</span>
-                </ul>
+                </div>
             </div>
         </div>
     </body>
 </html>
-
-
 
