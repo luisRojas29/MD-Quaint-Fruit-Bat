@@ -2,6 +2,28 @@ html, body{
     font-family: "Roboto";
 }
 
+/*Generic Shortcuts to commonly used options*/
+.floatLeft{ /*Generic shortcut to float items left*/
+    float: left;
+}
+
+.floatRight{ /*Generic shortcut to float items right*/
+    float: right;
+}
+
+.italic{ /*Generic shortcut to italicize text*/
+    font-style: italic;
+}
+
+.modernBlue{ /*Quick select of Modern Developer blue*/
+    color: #74A1E9;
+}
+
+.modernGray{ /*Quick select of Modern Developer gray*/
+    color: #EFF1F2;
+}
+/*END Generic Quick Options*/
+
 input { /*Add pencil to inputs, remove border*/
     background-image: url(images/pencil.png);
     background-position: right;
@@ -10,7 +32,7 @@ input { /*Add pencil to inputs, remove border*/
 }
 
 .greyBack{ /*Change Background to gray*/
-    background-color: #EFF1F2;;
+    background-color: #EFF1F2;
 }
 
 /*Selection Box Options*/
@@ -30,38 +52,18 @@ option{
 }
 /*END Select Options*/
 
-.floatLeft{ /*Generic shortcut to float items left*/
-    float: left;
-}
-
-.floatRight{ /*Generic shortcut to float items right*/
-    float: right;
-}
-
-.modernBlue{ /*Quick select of Modern Developer blue*/
-    color: #74A1E9;
-}
-
-.modernGray{ /*Quick select of Modern Developer gray*/
-    color: #EFF1F2;
-}
-
-.italic{
-    font-style: italic;
-}
-
 .line{ /*Gray line used to seperate the divs.  I use a straight, gray line
     and modify the height.  See /images/line.png*/
     display: block;
     position: relative;
     height: 2px;
     width: 100%;
-    margin-bottom: 5vh;
+    margin-bottom: 3vh;
 }
 
-.container{
+#topline{
     margin: 1% auto;
-    width: 85%;
+    width: 85vw;
 }
 
 #gear{ /*top right corner icon*/
@@ -79,68 +81,46 @@ option{
     color: #74A1E9;
 }
 
-/*Options for Modifiable Room Name Section*/
-#roomName{
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 3vh;
-    width: 80vw;
+.blockDetails{ /*Frequently used gray text descriptions*/
+    display: inline-block;
+    width: 100%;
+    color: #BCBCBC;
+    font-size: 12px;
 }
 
-#roomName span{
+/*Options for Modifiable Room Name Section*/
+#roomName{ /* Full Div options*/
+    display: block;
+    width: 80vw;
+    margin: 0 auto;
+    margin-bottom: 3vh;
+}
+
+#roomName input{
+    border: none;
     font-size: 25px;
+    width: 153px;
+    height: auto;
 }
 
 #roomName .blockDetails{
     color: black;
-    display: block;
     font-size: 19px;
     font-weight: 300;
-    margin-top: 5px;
-}
-
-#roomName a{
-    margin-left:10px;
-}
-
-#roomName a img{
-    height:13px;
-    widows:13px;
-}
-
-#roomName .line{
-    margin-top: 35px;
 }
 /*END Modifiable Room Name Section Options*/
 
 #rolesAndColors{ /*Define total page width of Colors/Roles Divs*/
     width: 80vw;
-    margin: 35px auto 0;
+    margin: 0 auto;
 }
 
-#rolesAndColors .rcTitle{
+.rcTitles{
     font-size: 22px;
-}
-
-.addNew, .import, .export{
-    text-decoration: none;
 }
 
 #addRoles{ /*Define width of Roles div*/
     width: 47.5%;
-}
-
-#addRoles .blockDetails{
-    color: gray;
-    display: block;
-    font-size: 13px;
-    margin: 5px auto 15px;
-}
-
-#addRoles a img{
-    height:10px;
-    margin: auto 5px;
-    widows:10px;
 }
 
 /*Allow user to define ROLES*/
@@ -149,23 +129,19 @@ option{
     width: 100%;
     flex-flow: row wrap;
     justify-content: flex-start;
-    height: 100px;
+    height: 150px;
 }
 
-#defineRoles .rolesRow{
-    margin: 5px auto;
-    padding: 10px 5px;
-    width: 100%;
+#defineRoles span{
+    width: 50%;
 }
 
-#defineRoles .rolesRow span.goRight{
-    float: right;
+#defineRoles input{
+    font-size: 14px;
+    border: none;
+    width: 50%;
+    padding: inherit;
 }
-
-#defineRoles .rolesRow a{
-    float: right;
-}
-
 /*END Options for User Control ROLES div*/
 
 /*define width of colors div*/
@@ -173,29 +149,12 @@ option{
     width: 47.5%;
 }
 
-#addColors .colorsTitles .orWord{
-    margin: 0 3px;
-    float: right;
-}
-
-#addColors .blockDetails{
-    color: gray;
-    display: block;
-    font-size: 13px;
-    margin: 5px auto 15px;
-}
-
 #defineColors{
-//display: flex;
+    display: flex;
     width: 100%;
-    height: 100px;
+    height: 150px;
     flex-flow: row wrap;
-    justify-content: flex-start;
-}
-
-#defineColors .colorsRow{
-    display: block;
-    margin: 20px auto;
+    align-items: flex-end;
 }
 
 #defineColors span{
@@ -203,8 +162,8 @@ option{
 }
 
 #defineColors select{
-    float: right;
     width: 85px;
+    
 }
 
 #defineColors .blockDetails{
