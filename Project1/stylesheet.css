@@ -1,5 +1,10 @@
 html, body{
     font-family: "Roboto";
+    background-color: #F3F8FA;
+}
+
+#topBackGround{
+    background-color: #FFFFFF;
 }
 
 /*Generic classes for commonly used options*/
@@ -63,8 +68,10 @@ option{
 }
 
 #topline{
-    margin: 1% auto;
+    margin: 0% auto;
     width: 85vw;
+     /*Allow padding change without changing background*/
+    padding-top: 1%;
 }
 
 #gear{ /*top right corner icon*/
@@ -181,4 +188,10 @@ option{
 
 #defineColors .blockDetails{
     width: 100%;
+}
+
+/*BOTTOM HALF OF PAGE*/
+
+#bottomUI{
+    background-color: #F3F8FA;
 }
