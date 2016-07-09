@@ -194,12 +194,14 @@ option{
 
 #bottomUI{ /*Allow change in background color*/
     background-color: #F3F8FA;
+    height: 60vh;
 }
 
 #panels{
     display: block;
     position: relative;
-    top: 8vh;
+    top: 5vh;
+    height: 75%;
     width: 85vw;
     margin: 0 auto;
 }
@@ -207,6 +209,44 @@ option{
 .bothPanels{
     background-color: #FFFFFF;
     width: 47.5%;
-    height: 200px;
+    height: 100%;
 }
 
+#bottomUI  > span{
+    display: block;
+    width: 85vw;
+    margin: 0 auto;
+    text-align: right;
+}
+
+#chatbox{
+    height: 22%;
+    position: absolute;
+    bottom: 0;
+    width: 47.5%;
+    border-top: 1px solid #F8F8F8;
+}
+
+#user{
+    position: relative;
+    height: 70%;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+#chatbox > input{
+    border: none;
+    background-color: #F8F8F8;
+    width: 70%;
+    height: 70%;
+    position: relative;
+    margin-top: 2%;
+}
+
+#nose{
+    height: 40%;
+    width: 12px;
+    position: relative;
+    margin-top: 3%;
+    margin-left: 1%;
+}
