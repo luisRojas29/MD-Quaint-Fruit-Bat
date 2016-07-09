@@ -234,7 +234,7 @@ option{
     margin-left: 2%;
 }
 
-#chatbox > input{
+#chatbox > input[type=text]{
     border: none;
     background-color: #F8F8F8;
     width: 70%;
@@ -249,4 +249,14 @@ option{
     position: relative;
     margin-top: 3%;
     margin-left: 1%;
+}
+
+#chatbox > input[type=submit]{
+    position: absolute;
+    background-image: none;
+    background-color: #759CEE;
+    width: 13%;
+    bottom: 10%;
+    right: 1%;
+    border-radius: 3px;
 }
