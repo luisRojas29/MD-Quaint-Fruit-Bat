@@ -192,6 +192,21 @@ option{
 
 /*BOTTOM HALF OF PAGE*/
 
-#bottomUI{
+#bottomUI{ /*Allow change in background color*/
     background-color: #F3F8FA;
 }
+
+#panels{
+    display: block;
+    position: relative;
+    top: 8vh;
+    width: 85vw;
+    margin: 0 auto;
+}
+
+.bothPanels{
+    background-color: #FFFFFF;
+    width: 47.5%;
+    height: 200px;
+}
+
