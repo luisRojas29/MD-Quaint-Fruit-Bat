@@ -37,15 +37,15 @@ After looking through the assignment again, we are supposed to create our UI/UX 
 ---
 
 *Complete*
-~~- Missing Text Boxes
-	- Theres a lot of span/text areas that really should be text boxes and allow user input.  I was focused more on visual aspect and really just didn't pay enough attention to this.  The following text should be input type textbox:
-		- Room Name
-		- Names 1 - 4
-		- Roles (Product Manager, 3D Animator, Concept Artist, Product Manager)~~
+~~Missing Text Boxes~~
+~~Theres a lot of span/text areas that really should be text boxes and allow user input.  I was focused more on visual aspect and really just didn't pay enough attention to this.  The following text should be input type textbox:~~
+		~~- Room Name~~
+		~~- Names 1 - 4~~
+		~~- Roles (Product Manager, 3D Animator, Concept Artist, Product Manager)~~
 
 
 *COMPLETE:  Fixed using Flexbox code*
-~~ Aligned divs
+~~Aligned divs
 The "roles" div and the "color" div should be equal total height.  This is currently "fixed" by manually changing the margins of id "colors."  Perhaps there's a more eloquent solution, though?~~
 
 ---
@@ -53,4 +53,9 @@ The "roles" div and the "color" div should be equal total height.  This is curre
 ---
 
 - Flexbox Browser Support
-	- Flexbox not supported is some browsers.  Normalize will help but browser testing will be especially necessary,
+	- Flexbox not supported is some browsers.  Normalize will help but browser testing will be especially necessary.
+    
+COMPLETE:  Fixed after fixing code merge with error.
+~~Odd misalgnment of divs~~
+~~Odd error causes two mid divs to not be aligned.  Alignment is off by just a couple pixels and hard to notice.~~
+~~After 2 hours still couldn't fix this.~~

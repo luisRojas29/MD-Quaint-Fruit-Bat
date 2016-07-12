@@ -1,6 +1,34 @@
 html, body{
     font-family: "Roboto";
+    background-color: #F3F8FA;
 }
+
+#topBackGround{
+    background-color: #FFFFFF;
+}
+
+/*Generic classes for commonly used options*/
+.italic{
+    font-style: italic;
+}
+
+.floatLeft{ /*Generic shortcut to float items left*/
+    float: left;
+}
+
+.floatRight{ /*Generic shortcut to float items right*/
+    float: right;
+}
+
+.modernBlue{ /*Quick select of Modern Developer blue*/
+    color: #74A1E9;
+}
+
+.modernGray{ /*Quick select of Modern Developer gray*/
+    color: #EFF1F2;
+}
+
+/*END Generic Options*/
 
 input { /*Add pencil to inputs, remove border*/
     background-image: url(images/pencil.png);
@@ -10,7 +38,7 @@ input { /*Add pencil to inputs, remove border*/
 }
 
 .greyBack{ /*Change Background to gray*/
-    background-color: #EFF1F2;;
+    background-color: #EFF1F2;
 }
 
 /*Selection Box Options*/
@@ -30,29 +58,20 @@ option{
 }
 /*END Select Options*/
 
-.floatLeft{ /*Generic shortcut to float items left*/
-    float: left;
-}
-
-.floatRight{ /*Generic shortcut to float items right*/
-    float: right;
-}
-
-.modernBlue{ /*Quick select of Modern Developer blue*/
-    color: #74A1E9;
-}
-
-.modernGray{ /*Quick select of Modern Developer gray*/
-    color: #EFF1F2;
-}
-
 .line{ /*Gray line used to seperate the divs.  I use a straight, gray line
     and modify the height.  See /images/line.png*/
     display: block;
     position: relative;
     height: 2px;
     width: 100%;
-    margin-bottom: 6vh;
+    margin-bottom: 5vh;
+}
+
+#topline{
+    margin: 0% auto;
+    width: 85vw;
+     /*Allow padding change without changing background*/
+    padding-top: 1%;
 }
 
 #gear{ /*top right corner icon*/
@@ -71,7 +90,7 @@ option{
 }
 
 .blockDetails{ /*Frequently used gray text descriptions*/
-    display: block;
+    display: inline-block;
     width: 100%;
     color: #BCBCBC;
     font-size: 12px;
@@ -85,22 +104,36 @@ option{
     margin-bottom: 3vh;
 }
 
-#roomNames span{
-    display: block;
-    width: 100%;
+#roomName .blockDetails{
+    color: black;
+    font-size: 19px;
+    font-weight: 300;
 }
 
 #roomName input{
     border: none;
-    font-size: 16px;
-    width: 115px;
-    height: 13px;
+    font-size: 25px;
+    width: 153px;
+    height: auto;
 }
 /*END Modifiable Room Name Section Options*/
 
 #rolesAndColors{ /*Define total page width of Colors/Roles Divs*/
+    display: block;
     width: 80vw;
     margin: 0 auto;
+     /*Fixes alignment issue but not sure why auto height isn't work.  Could cause scaling issues down the road*/
+    height: 250px;
+}
+
+.rcTitles{
+    font-size: 22px;
+    width: 84px;
+}
+
+.addNew{
+    width: calc(100% - 84px);
+    text-align: right;
 }
 
 #addRoles{ /*Define width of Roles div*/
@@ -113,18 +146,20 @@ option{
     width: 100%;
     flex-flow: row wrap;
     justify-content: flex-start;
-    height: 100px;
+    height: 150px;
 }
 
-#defineRoles span{
+#defineRoles span{ /*Names of people*/
     width: 50%;
+    font-size: 14px;
+    padding-top: 10px; /*Fixing Text alignment with input*/
 }
 
 #defineRoles input{
     font-size: 14px;
     border: none;
     width: 50%;
-    padding: inherit;
+    padding-top: 0; /*Fixing Text alignment with input*/
 }
 /*END Options for User Control ROLES div*/
 
@@ -136,9 +171,10 @@ option{
 #defineColors{
     display: flex;
     width: 100%;
-    height: 100px;
+    height: 150px;
     flex-flow: row wrap;
     justify-content: flex-start;
+    align-items: flex-end;
 }
 
 #defineColors span{
@@ -152,4 +188,76 @@ option{
 
 #defineColors .blockDetails{
     width: 100%;
+}
+
+/*BOTTOM HALF OF PAGE*/
+
+#bottomUI{ /*Allow change in background color*/
+    background-color: #F3F8FA;
+    height: 60vh;
+}
+
+#panels{
+    display: block;
+    position: relative;
+    top: 5vh;
+    height: 75%;
+    width: 85vw;
+    margin: 0 auto;
+}
+
+.bothPanels{
+    background-color: #FFFFFF;
+    width: 47.5%;
+    height: 100%;
+}
+
+#bottomUI  > span{
+    display: block;
+    width: 85vw;
+    margin: 0 auto;
+    text-align: right;
+}
+
+#chatbox{
+    height: 22%;
+    position: absolute;
+    bottom: 0;
+    width: 47.5%;
+    border-top: 1px solid #F8F8F8;
+}
+
+#user{
+    position: relative;
+    height: 70%;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+#chatbox > input[type=text]{
+    border: none;
+    background-color: #F8F8F8;
+    width: 70%;
+    height: 70%;
+    position: relative;
+    margin-top: 2%;
+    margin-left: -1.3%;
+}
+
+#nose{
+    height: 40%;
+    width: 12px;
+    position: relative;
+    margin-top: 3%;
+    margin-left: 1%;
+}
+
+#chatbox > input[type=submit]{
+    position: absolute;
+    background-image: none;
+    background-color: #759CEE;
+    width: 13%;
+    bottom: 10%;
+    right: 1%;
+    border-radius: 3px;
 }
