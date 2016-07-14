@@ -192,20 +192,123 @@ option{
 
 /*BOTTOM HALF OF PAGE*/
 
-#bottomUI{ /*Allow change in background color*/
+.bottomUI{ /*Allow change in background color*/
     background-color: #F3F8FA;
     height: 60vh;
 }
 
-#panels{
+.panels{
     display: block;
     position: relative;
     top: 5vh;
     height: 75%;
-    width: 85vw;
+    width: 90%;
     margin: 0 auto;
 }
 
+.leftPanel, .rightPanel{
+    width: 50%;
+    height:auto;
+}
+
+.panelTabs .tab{
+    border-top: 2px solid #6C84DC;
+    background: white;
+    display: inline-block;
+    text-align: center;
+    padding-top: 5px;
+    width: 25%;
+}
+
+.panelTabs .tab span.tab-name{
+    text-align: center;
+}
+
+.panelTabs .tab span.close{
+    float: right;
+    margin-right: 5px;
+}
+
+.panelTabs .tab-add{
+    float: right;
+    margin-right: 5px;
+}
+
+.panelTabs .tab-add a{
+    color: #6C84DC;
+    text-decoration: none;
+}
+
+.panelBody{
+    background: white;
+}
+
+.panelBody .commentLeft{
+    float: left;
+}
+
+.panelBody .commentLeft .commentBox{
+    margin: 10px 20px;
+}
+
+.panelBody .commentLeft .commentBox img.user{
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    height: 45px;
+    vertical-align: top;
+    width: 45px;
+}
+
+.panelBody .commentLeft .commentBox img.nose{
+    color: #DD77CB;;
+    margin-right: -8px;
+    margin-top: 10px;
+    position: relative;
+    vertical-align: top;
+    width: 12px;
+}
+
+.panelBody .commentLeft .commentBox .comment{
+    background: #DD77CB;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    width: 70%;
+}
+
+.panelBody .commentLeft .commentBox .comment .header{
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.panelBody .commentLeft .commentBox .comment .header .userName{
+    display: inline;
+    font-weight: 400;
+}
+
+.panelBody .commentLeft .commentBox .comment .header .time{
+    color: #BCBCBC;
+    float: right;
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+.panelBody .commentLeft .commentBox .comment .message{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.panelBody .commentLeft .commentBox .comment .message p{
+    font-size: 14px;
+    line-height: 150%;
+    margin: 0;
+}
+
+
+
+/*
 .bothPanels{
     background-color: #FFFFFF;
     width: 47.5%;
@@ -260,4 +363,4 @@ option{
     bottom: 10%;
     right: 1%;
     border-radius: 3px;
-}
+}*/
