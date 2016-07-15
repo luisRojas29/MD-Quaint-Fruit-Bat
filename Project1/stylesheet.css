@@ -3,8 +3,9 @@ html, body{
     background-color: #F3F8FA;
 }
 
-#topBackGround{
+#topUI{
     background-color: #FFFFFF;
+    height: auto;
 }
 
 /*Generic classes for commonly used options*/
@@ -192,6 +193,9 @@ option{
 
 /*BOTTOM HALF OF PAGE*/
 
+#bottomUI{
+}
+
 .closeSettings{
     color: darkgray;
     display: block;
@@ -199,21 +203,19 @@ option{
     margin: 15px 20px 30px 0;
     text-decoration: none;
 }
-
-.bottomUI{ /*Allow change in background color*/
-    background-color: #F3F8FA;
-    height: 60vh;
-}
-
-.panels{
+#panelsLocation{
+    display: block;
+    position: relative;
+    top: 5vh;
     height: 75%;
-    width: 90%;
+    width: 85vw;
     margin: 0 auto;
 }
 
-.leftPanel, .rightPanel{
-    height:auto;
-    width: 50%;
+.bothPanels{
+    height: auto;
+    width: 47.5%;
+    background-color: white;
 }
 
 .panelTabs .tab{

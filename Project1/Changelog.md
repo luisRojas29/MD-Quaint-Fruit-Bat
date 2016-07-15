@@ -89,4 +89,16 @@
 		- Removed CSS lines:
 			- .panelBody .commentLeft .commentBox .comment .message p
 			- .panelBody .commentRight .commentBox .comment .message p
-				- only need .message p 
+				- only need .message p
+
+- bottomUI ID options
+	- Background option no longer needed since we have a more elegant solution now.
+
+- . panels
+	- .panels is not used for stylizing the panels.  It's a top-layer div that alerts the browser where to place the panels on the page.
+	- It should never be used more than once, so I've reverted your change to class back to ID.
+	- To avoid confusion I've changed the id name to "panelsLocation"
+
+.panelsBoth class
+	- Reimplemented class for options that affect both panels, making it easier to make changes to both sides at once. Removed options that include both "leftPanel" and "rightPanel" and used this class instead.
+	- Changed width back from 50% to 47.5vw, since there should be space in between panels.
