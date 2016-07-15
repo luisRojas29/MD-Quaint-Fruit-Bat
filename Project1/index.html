@@ -71,18 +71,18 @@
         </div>
             <!--Bottom of page-->
         <div class="bottomUI">
-            <span>close settings</span>
+            <a href="#" class="closeSettings">close settings</a>
             <div class="panels">
 
                 <div class="leftPanel">
                     <div class="panelTabs">
                         <div class="tab">
-                            <span class="tab-name">Chat</span>
+                            <span class="tab-name active">Chat</span>
                             <span class="close">X</span>
                         </div>
 
                         <div class="tab">
-                            <span class="tab-name">Screen Sharing</span>
+                            <span class="tab-name inactive">Screen Sharing</span>
                             <span class="close">X</span>
                         </div>
 
@@ -96,7 +96,7 @@
                         <div class="commentLeft">
                             <div class="commentBox">
                                 <img class="user" class="floatLeft" src="images/userimage.jpg"/>
-                                <img class="nose" class="floatLeft" src="images/Nose.png"/>
+                                <!--<img class="nose" class="floatLeft" src="images/Nose.png"/>-->
                                 <div class="comment">
                                     <div class="header">
                                         <h4 class="userName">Alexander Smith</h4>
@@ -115,7 +115,7 @@
                         <div class="commentLeft">
                             <div class="commentBox">
                                 <img class="user" class="floatLeft" src="images/userimage.jpg"/>
-                                <img class="nose" class="floatLeft" src="images/Nose.png"/>
+                                <!--<img class="nose" class="floatLeft" src="images/Nose.png"/>-->
                                 <div class="comment">
                                     <div class="header">
                                         <h4 class="userName">Anna Pearson</h4>
@@ -135,7 +135,7 @@
                         <div class="commentRight">
                             <div class="commentBox">
                                 <img class="user" class="floatLeft" src="images/userimage.jpg"/>
-                                <img class="nose" class="floatLeft" src="images/Nose.png"/>
+                                <!--<img class="nose" class="floatLeft" src="images/Nose.png"/>-->
                                 <div class="comment">
                                     <div class="header">
                                         <h4 class="userName">James Morrison</h4>
@@ -151,36 +151,37 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="commentLeft">
-                        <div class="commentBox">
-                            <img id="user" class="floatLeft" src="images/userimage.jpg"/>
-                            <img id="nose" class="floatLeft" src="images/Nose.png"/>
-                            <div class="comment">
-                                <div class="header">
-                                    <h4 class="userName">Alexander Smith</h4>
-                                    <span class="time">16 min ago</span>
-                                </div>
-                                <div class="message">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                        Maxime nesciunt officiis voluptas? Aperiam aspernatur dolor dolore dolorem
-                                        dolorum ducimus eius et excepturi hic id iure nisi, odit placeat quae
-                                        recusandae.
-                                    </p>
+                        <div class="commentLeft">
+                            <div class="commentBox">
+                                <img class="user" class="floatLeft" src="images/userimage.jpg"/>
+                                <!--<img class="nose" class="floatLeft" src="images/Nose.png"/>-->
+                                <div class="comment">
+                                    <div class="header">
+                                        <h4 class="userName">Anna Pearson</h4>
+                                        <span class="time">12 min ago</span>
+                                    </div>
+                                    <div class="message">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                            Maxime nesciunt officiis voluptas? Aperiam aspernatur dolor dolore dolorem
+                                            dolorum ducimus eius et excepturi hic id iure nisi, odit placeat quae
+                                            recusandae.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
                     <div class="panelChat">
                         <div class="chatbox">
                             <img class="user" class="floatLeft" src="images/userimage.jpg"/>
-                            <img class="nose" class="floatLeft" src="images/Nose.png"/>
-                            <input class="floatLeft" type="text"/>
+                            <!--<img class="nose" class="floatLeft" src="images/Nose.png"/>-->
+                            <textarea class="userMessage" type="text">Say something...</textarea>
                         </div>
                         <div class="sendMessage">
-                            <input class="floatRight" type="submit" value="SEND">
+                            <button type="submit">SEND</button>
                         </div>
                     </div>
 
@@ -197,16 +198,6 @@
 
                 </div>
 
-                <div id="leftPanel" class="bothPanels floatLeft">
-                    <div id="chatbox">
-                        <img class="user" class="floatLeft" src="images/userimage.jpg"/>
-                        <img class="nose" class="floatLeft" src="images/Nose.png"/>
-                        <input class="floatLeft" type="text"/>
-                        <input class="floatRight" type="submit" value="SEND">
-                    </div>
-                </div>
-                <div id="rightPanel" class="bothPanels floatRight">
-                </div>
             </div>
         </div>
     </body>

@@ -192,32 +192,44 @@ option{
 
 /*BOTTOM HALF OF PAGE*/
 
+.closeSettings{
+    color: darkgray;
+    display: block;
+    text-align: right;
+    margin: 15px 20px 30px 0;
+    text-decoration: none;
+}
+
 .bottomUI{ /*Allow change in background color*/
     background-color: #F3F8FA;
     height: 60vh;
 }
 
 .panels{
-    display: block;
-    position: relative;
-    top: 5vh;
     height: 75%;
     width: 90%;
     margin: 0 auto;
 }
 
 .leftPanel, .rightPanel{
-    width: 50%;
     height:auto;
+    width: 50%;
 }
 
 .panelTabs .tab{
     border-top: 2px solid #6C84DC;
-    background: white;
     display: inline-block;
     text-align: center;
     padding-top: 5px;
     width: 25%;
+}
+
+.panelTabs .active{
+    background: white;
+}
+
+.panelTabs .inactive{
+    background: darkgray;
 }
 
 .panelTabs .tab span.tab-name{
@@ -241,23 +253,40 @@ option{
 
 .panelBody{
     background: white;
+    overflow: hidden;
 }
 
 .panelBody .commentLeft{
     float: left;
 }
 
-.panelBody .commentLeft .commentBox{
-    margin: 10px 20px;
+.panelBody .commentRight{
+    float: right;
 }
 
-.panelBody .commentLeft .commentBox img.user{
+.panelBody .commentLeft .commentBox,
+.panelBody .commentRight .commentBox,
+.panelChat .chatbox{
+    margin: 10px 10px;
+}
+
+.panelBody .commentRight .commentBox{
+    overflow: hidden;
+}
+
+.panelBody .commentLeft .commentBox img.user,
+.panelBody .commentRight .commentBox img.user,
+.panelChat .chatbox img.user{
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
     height: 45px;
     vertical-align: top;
     width: 45px;
+}
+
+.panelBody .commentRight .commentBox img.user{
+    float: right;
 }
 
 .panelBody .commentLeft .commentBox img.nose{
@@ -269,7 +298,8 @@ option{
     width: 12px;
 }
 
-.panelBody .commentLeft .commentBox .comment{
+.panelBody .commentLeft .commentBox .comment,
+.panelBody .commentRight .commentBox .comment{
     background: #DD77CB;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -278,35 +308,73 @@ option{
     width: 70%;
 }
 
-.panelBody .commentLeft .commentBox .comment .header{
+.panelBody .commentRight .commentBox .comment{
+    float: right;
+}
+
+.panelBody .commentLeft .commentBox .comment .header,
+.panelBody .commentRight .commentBox .comment .header{
     margin-top: 5px;
     padding: 10px;
 }
 
-.panelBody .commentLeft .commentBox .comment .header .userName{
+.panelBody .commentLeft .commentBox .comment .header .userName,
+.panelBody .commentRight .commentBox .comment .header .userName{
     display: inline;
     font-weight: 400;
 }
 
-.panelBody .commentLeft .commentBox .comment .header .time{
+.panelBody .commentLeft .commentBox .comment .header .time,
+.panelBody .commentRight .commentBox .comment .header .time{
     color: #BCBCBC;
     float: right;
     font-size: 13px;
     margin-right: 10px;
 }
 
-.panelBody .commentLeft .commentBox .comment .message{
+.panelBody .commentLeft .commentBox .comment .message,
+.panelBody .commentRight .commentBox .comment .message{
     margin: 0 auto;
     width: 90%;
 }
 
-.panelBody .commentLeft .commentBox .comment .message p{
+.panelBody .commentLeft .commentBox .comment .message p,
+.panelBody .commentRight .commentBox .comment .message p{
     font-size: 14px;
     line-height: 150%;
     margin: 0;
 }
 
+.panelChat{
+    background: white;
+    border-top:1px solid darkgray;
+    overflow: hidden;
+}
 
+.panelChat .chatbox{
+    display: inline-block;
+    margin-right:0;
+    width: 65%;
+}
+
+.panelChat .chatbox textarea{
+    height:80px;
+    width:100%;
+}
+
+.panelChat .sendMessage{
+    display: inline-block;
+}
+.panelChat .sendMessage button{
+    background: #6C84DC;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    border-radius:5px;
+    border:none;
+    color: white;
+    padding: 15px;
+    width:120px;
+}
 
 /*
 .bothPanels{
