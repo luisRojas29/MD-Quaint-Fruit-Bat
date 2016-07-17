@@ -233,37 +233,40 @@ option{
     height: 10%;
 }
 
-.panelTabs .tab{
-    border-top: 2px solid #6C84DC;
+.tab{
     display: inline-block;
     text-align: center;
-    padding-top: 5px;
     width: 30%;
+    height: 50%;
 }
 
-.panelTabs .active{
+.tabActive{
+    display: inline-block;
     background: white;
+    border-top: 5px solid #6C84DC;
+    float: left;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
-.panelTabs .inactive{
-    background: darkgray;
+.tabInactive{
+    display: inline-block;
+    background: #E1E7EB;
+    border-top: 5px solid #E1E7EB;
+    float: left;
 }
 
-.panelTabs .tab span.tab-name{
-    text-align: center;
-}
-
-.panelTabs .tab span.close{
+.close{
     float: right;
     margin-right: 5px;
 }
 
-.panelTabs .tab-add{
+.tab-add{
     float: right;
     margin-right: 5px;
 }
 
-.panelTabs .tab-add a{
+.tab-add a{
     color: #6C84DC;
     text-decoration: none;
 }
