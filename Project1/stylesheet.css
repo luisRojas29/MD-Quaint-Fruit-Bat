@@ -379,6 +379,11 @@ img.user{
     left: 10px;
 }
 
+.sendMessage button:active{
+    position: relative;
+    top: 2px;
+}
+
 /*
 .bothPanels{
     background-color: #FFFFFF;
