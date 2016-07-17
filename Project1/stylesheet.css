@@ -3,6 +3,10 @@ html, body{
     background-color: #F3F8FA;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 #topUI{
     background-color: #FFFFFF;
     height: auto;
@@ -194,6 +198,7 @@ option{
 /*BOTTOM HALF OF PAGE*/
 
 #bottomUI{
+    width: 100vw;
 }
 
 .closeSettings{
@@ -207,21 +212,19 @@ option{
 #panelsLocation{
     display: block;
     position: relative;
-    top: 5vh;
-    height: 75%;
     width: 85vw;
     margin: 0 auto;
+    background-color: #FFFFFF;
 }
 
 .bothPanels{
     height: 450px;
     width: 47.5%;
-    background-color: white;
 }
 
 #ruler{
-    height: 450px;
-    width: 50px;
+    height: 100%;
+    width: 4.3%;
 }
 
 .panelTabs{
