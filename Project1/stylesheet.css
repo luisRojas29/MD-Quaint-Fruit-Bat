@@ -203,6 +203,7 @@ option{
     margin: 15px 20px 30px 0;
     text-decoration: none;
 }
+
 #panelsLocation{
     display: block;
     position: relative;
@@ -213,7 +214,7 @@ option{
 }
 
 .bothPanels{
-    height: auto;
+    height: 450px;
     width: 47.5%;
     background-color: white;
 }
@@ -223,7 +224,7 @@ option{
     display: inline-block;
     text-align: center;
     padding-top: 5px;
-    width: 25%;
+    width: 30%;
 }
 
 .panelTabs .active{
@@ -255,7 +256,8 @@ option{
 
 .panelBody{
     background: white;
-    overflow: hidden;
+    overflow-y: scroll;
+    height: 62%;
 }
 
 .panelBody .commentLeft{
@@ -271,7 +273,6 @@ option{
 }
 
 .commentBox{
-    overflow: hidden;
     margin: 10px 10px;
 }
 
@@ -288,14 +289,14 @@ img.user{
     float: right;
 }
 
-.commentLeft .commentBox img.nose{
+/*.commentLeft .commentBox img.nose{---Doesn't seem to do anything right now---
     color: #DD77CB;;
     margin-right: -8px;
     margin-top: 10px;
     position: relative;
     vertical-align: top;
     width: 12px;
-}
+}*/
 
 .comment{
     background: #DD77CB;
@@ -341,24 +342,32 @@ img.user{
 .panelChat{
     background: white;
     border-top:1px solid darkgray;
-    overflow: hidden;
+    height: 28%;
 }
 
-.panelChat .chatbox{
+.chatbox{
     display: inline-block;
     margin-right:0;
     width: 65%;
 }
 
-.panelChat .chatbox textarea{
+.chatbox img{
+    float: left;
+}
+
+.chatbox textarea{
     height:80px;
     width:100%;
 }
 
-.panelChat .sendMessage{
+.sendMessage{
     display: inline-block;
 }
-.panelChat .sendMessage button{
+
+.sendMessage button{
+    display: inline-block;
+    position: relative;
+    float: left;
     background: #6C84DC;
     -webkit-border-radius:5px;
     -moz-border-radius:5px;
@@ -367,6 +376,7 @@ img.user{
     color: white;
     padding: 15px;
     width:120px;
+    left: 10px;
 }
 
 /*
