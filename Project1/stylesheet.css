@@ -224,6 +224,11 @@ option{
     width: 50px;
 }
 
+.panelTabs{
+    display: block;
+    height: 10%;
+}
+
 .panelTabs .tab{
     border-top: 2px solid #6C84DC;
     display: inline-block;
