@@ -219,6 +219,11 @@ option{
     background-color: white;
 }
 
+#ruler{
+    height: 450px;
+    width: 50px;
+}
+
 .panelTabs .tab{
     border-top: 2px solid #6C84DC;
     display: inline-block;
@@ -383,6 +388,16 @@ img.user{
     position: relative;
     top: 2px;
 }
+
+#rightPanel{
+    border: none;
+    padding: none;
+    margin: none;
+    background-image: none;
+}
+
+
+/*OLD CODE*/
 
 /*
 .bothPanels{
