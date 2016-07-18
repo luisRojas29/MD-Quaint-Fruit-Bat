@@ -197,11 +197,11 @@ option{
 
 /*BOTTOM HALF OF PAGE*/
 
-#bottomUI{
+#bottomUI{ /*Keep percentages based on device width*/
     width: 100vw;
 }
 
-.closeSettings{
+#closeSettings{ /*Display close settings option*/
     color: darkgray;
     display: block;
     text-align: right;
@@ -209,7 +209,9 @@ option{
     text-decoration: none;
 }
 
-#panelsLocation{
+/*---Options that affect BOTH panels---*/
+
+#panelsLocation{ /*Sets panels location on screen, adds bottom margin*/
     display: block;
     position: relative;
     width: 85vw;
@@ -218,29 +220,34 @@ option{
     margin-bottom: 50px;
 }
 
-.bothPanels{
+.bothPanels{ /*Set height of width of panels and insure they are of equal size*/
     height: 450px;
     width: 47.5%;
 }
 
-#ruler{
+#ruler{ /*Ruler slides between the panels*/
     height: 100%;
     width: 4.3%;
 }
+/*---END Options for BOTH Panels---*/
 
-.panelTabs{
+/*---Left Panel Options---*/
+
+/*--Tabs Options--*/
+/*--Subset of left panel options--*/
+.panelTabs{ /*Block that displays panel tabs*/
     display: block;
     height: 10%;
 }
 
-.tab{
+.tab{ /*Generic options for all tabs*/
     display: inline-block;
     text-align: center;
     width: 30%;
     height: 50%;
 }
 
-.tabActive{
+#tabActive{ /*Options for the active tab.  There can only be one*/
     display: inline-block;
     background: white;
     border-top: 5px solid #6C84DC;
@@ -249,29 +256,28 @@ option{
     border-top-right-radius: 5px;
 }
 
-.tabInactive{
+.tabInactive{ /*Options for the Inactive Tabs*/
     display: inline-block;
     background: #E1E7EB;
     border-top: 5px solid #E1E7EB;
     float: left;
 }
 
-.close{
+.close{ /*"X" closes an open tab.*/
     float: right;
     margin-right: 5px;
 }
 
-.tab-add{
-    float: right;
+.tab-add a{ /*Options to add an additional tab*/
     margin-right: 5px;
-}
-
-.tab-add a{
+    float: right;
     color: #6C84DC;
     text-decoration: none;
 }
+/*--End Tab options--*/
 
-.panelBody{
+
+.panelBody{ 
     background: white;
     overflow-y: scroll;
     height: 62%;
@@ -400,7 +406,9 @@ img.user{
     position: relative;
     top: 2px;
 }
+/*---END left panel Options---*/
 
+/*---Right Panel Options---*/
 #rightPanel{
     border: none;
     padding: none;
@@ -412,42 +420,12 @@ img.user{
 /*OLD CODE*/
 
 /*
-.bothPanels{
-    background-color: #FFFFFF;
-    width: 47.5%;
-    height: 100%;
-}
-
-#bottomUI  > span{
-    display: block;
-    width: 85vw;
-    margin: 0 auto;
-    text-align: right;
-}
-
 #chatbox{
     height: 22%;
     position: absolute;
     bottom: 0;
     width: 47.5%;
     border-top: 1px solid #F8F8F8;
-}
-
-#user{
-    position: relative;
-    height: 70%;
-    margin-top: 2%;
-    margin-left: 2%;
-}
-
-#chatbox > input[type=text]{
-    border: none;
-    background-color: #F8F8F8;
-    width: 70%;
-    height: 70%;
-    position: relative;
-    margin-top: 2%;
-    margin-left: -1.3%;
 }
 
 #nose{
@@ -457,13 +435,3 @@ img.user{
     margin-top: 3%;
     margin-left: 1%;
 }
-
-#chatbox > input[type=submit]{
-    position: absolute;
-    background-image: none;
-    background-color: #759CEE;
-    width: 13%;
-    bottom: 10%;
-    right: 1%;
-    border-radius: 3px;
-}*/
