@@ -1,18 +1,22 @@
+/*************************************************************************************************
+                                                                        TOP HALF OF PAGE
+*************************************************************************************************/
 html, body{
     font-family: "Roboto";
     background-color: #F3F8FA;
 }
 
-body{
+body{ /*Fix occasional x-axis calculation bug*/
     overflow-x: hidden;
 }
 
-#topUI{
+#topUI{ /*Set background color, ehight, for top of page*/
     background-color: #FFFFFF;
     height: auto;
 }
 
 /*Generic classes for commonly used options*/
+
 .italic{
     font-style: italic;
 }
@@ -109,7 +113,7 @@ option{
     margin-bottom: 3vh;
 }
 
-#roomName .blockDetails{
+#roomName .blockDetails{ /*Modify gray text explanation for this section of site*/
     color: black;
     font-size: 19px;
     font-weight: 300;
