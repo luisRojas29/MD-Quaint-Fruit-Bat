@@ -409,6 +409,7 @@ img.user{
     padding: none;
     margin: none;
     background-image: none;
+    resize: none;
 }
 
 
