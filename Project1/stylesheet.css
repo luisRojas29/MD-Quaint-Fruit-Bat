@@ -228,7 +228,7 @@ option{
 }
 
 .bothPanels{ /*Set height of width of panels and insure they are of equal size*/
-    height: 500px;
+    height: 31.25rem;
     width: 47.5%;
     float: left;
     background-color: white;
@@ -269,7 +269,7 @@ is equal to panels.  Width changed here.*/
 #tabActive{ /*Options for the active tab.  There can only be one*/
     display: inline-block;
     background: white;
-    border-top: 5px solid #6C84DC;
+    border-top: 0.3125rem solid #6C84DC;
     float: left;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -278,17 +278,17 @@ is equal to panels.  Width changed here.*/
 .tabInactive{ /*Options for the Inactive Tabs*/
     display: inline-block;
     background: #E1E7EB;
-    border-top: 5px solid #E1E7EB;
+    border-top: 0.3125rem solid #E1E7EB;
     float: left;
 }
 
 .close{ /*"X" closes an open tab.*/
     float: right;
-    margin-right: 5px;
+    margin-right: 0.3125rem;
 }
 
 .tab-add a{ /*Options to add an additional tab*/
-    margin-right: 5px;
+    margin-right: 0.3125rem;
     float: right;
     color: #6C84DC;
     text-decoration: none;
@@ -303,20 +303,20 @@ is equal to panels.  Width changed here.*/
 }
 
 .chatbox{
-    margin: 10px 10px;
+    margin: 0.625rem 0.625rem;
 }
 
 .commentBox{
-    margin: 10px 10px;
+    margin: 0.625rem 0.625rem;
 }
 
 img.user{
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    height: 45px;
+    height: 2.813rem;
     vertical-align: top;
-    width: 45px;
+    width: 2.813rem;
 }
 
 /*.commentLeft .commentBox img.nose{---Doesn't seem to do anything right now---
@@ -338,8 +338,8 @@ img.user{
 }
 
 .header{
-    margin-top: 5px;
-    padding: 10px;
+    margin-top: 0.3125rem;
+    padding:  0.625rem;
 }
 
 .userName{
@@ -350,8 +350,8 @@ img.user{
 .time{
     color: #BCBCBC;
     float: right;
-    font-size: 13px;
-    margin-right: 10px;
+    font-size: 0.8125rem;
+    margin-right: 0.625rem;
 }
 
 .message{
@@ -360,14 +360,14 @@ img.user{
 }
 
 .message p{
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 150%;
     margin: 0;
 }
 
 .panelChat{
     background: white;
-    border-top:1px solid darkgray;
+    border-top: 0.0625rem solid darkgray;
     height: 28%;
 }
 
@@ -378,8 +378,8 @@ img.user{
 }
 
 .chatbox textarea{
-    height:80px;
-    width:100%;
+    height: 5rem;
+    width: 100%;
 }
 
 .sendMessage{
@@ -396,9 +396,9 @@ img.user{
     border-radius:5px;
     border:none;
     color: white;
-    padding: 15px;
-    width:120px;
-    left: 10px;
+    padding: 0.9375rem;
+    width:7.5rem;
+    left: 0.625rem;
 }
 
 .sendMessage button:active{
