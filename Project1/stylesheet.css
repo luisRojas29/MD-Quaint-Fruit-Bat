@@ -241,7 +241,7 @@ option{
 #ruler{ /*Ruler slides between the panels*/
 /*HTML uses class "bothPanels" to ensure height
 is equal to panels.  Width changed here.*/
-    width: 50px;
+    width: 2.5%;
 }
 /*---END Options for BOTH Panels---*/
 
