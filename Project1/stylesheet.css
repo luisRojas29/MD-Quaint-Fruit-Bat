@@ -220,23 +220,25 @@ option{
 
 #panelsLocation{ /*Sets panels location on screen, adds bottom margin*/
     display: block;
-    position: relative;
     width: 85vw;
+    height:auto;
     margin: 0 auto;
-    background-color: #FFFFFF;
     margin-bottom: 3.125rem;
+    overflow: hidden; /*Fixes float height issue*/
 }
 
 .bothPanels{ /*Set height of width of panels and insure they are of equal size*/
-    height: 450px;
+    height: 500px;
     width: 47.5%;
+    float: left;
 }
+
 
 
 #ruler{ /*Ruler slides between the panels*/
 /*HTML uses class "bothPanels" to ensure height
 is equal to panels.  Width changed here.*/
-    width: 4.3%;
+    width: 50px;
 }
 /*---END Options for BOTH Panels---*/
 
@@ -312,10 +314,6 @@ img.user{
     height: 45px;
     vertical-align: top;
     width: 45px;
-}
-
-.commentRight .commentBox img.user{
-    float: right;
 }
 
 /*.commentLeft .commentBox img.nose{---Doesn't seem to do anything right now---
@@ -407,13 +405,12 @@ img.user{
 /*---END left panel Options---*/
 
 /*---Right Panel Options---*/
-#rightPanel{
+#rightPanel{;
     border: none;
-    padding: none;
-    margin: none;
     background-image: none;
     resize: none;
 }
+
 
 
 /*OLD CODE*/
