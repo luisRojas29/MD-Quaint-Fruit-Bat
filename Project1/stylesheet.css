@@ -302,10 +302,6 @@ is equal to panels.  Width changed here.*/
     height: 62%;
 }
 
-.chatbox{
-    margin: 0.625rem 0.625rem;
-}
-
 .commentBox{
     margin: 0.625rem 0.625rem;
 }
@@ -375,6 +371,7 @@ img.user{
     display: inline-block;
     margin-right:0;
     width: 65%;
+    margin: 0.625rem 0.625rem;
 }
 
 .chatbox textarea{
