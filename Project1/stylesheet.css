@@ -232,6 +232,8 @@ option{
     width: 47.5%;
     float: left;
     background-color: white;
+    /*Fix differences in element border calculations*/
+    box-sizing: border-box; 
 }
 
 
