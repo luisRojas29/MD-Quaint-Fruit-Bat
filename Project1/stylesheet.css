@@ -317,6 +317,7 @@ img.user{
     height: 2.813rem;
     vertical-align: top;
     width: 2.813rem;
+    margin-right: 1rem;
 }
 
 /*.commentBox img.nose{---Doesn't seem to do anything right now---
@@ -371,26 +372,27 @@ img.user{
     height: 28%;
 }
 
-.chatbox{
-    display: inline-block;
-    margin-right:0;
-    width: 65%;
-    margin: 0.625rem 0.625rem;
-}
-
-.chatbox textarea{
-    height: 5rem;
+#chatbox{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 80%;
     width: 100%;
 }
 
-.sendMessage{
-    display: inline-block;
+#chatbox textarea{
+    width: 65%;
+    height: 100%;
+    border: none;
+    background-color: #F7F7F7;
+    border-radius: 5px;
 }
 
-.sendMessage button{
-    display: inline-block;
-    position: relative;
-    float: left;
+.sendMessage{
+    position: absolute;
+    float: right;
     background: #6C84DC;
     -webkit-border-radius:5px;
     -moz-border-radius:5px;
@@ -398,13 +400,17 @@ img.user{
     border:none;
     color: white;
     padding: 0.9375rem;
-    width:7.5rem;
-    left: 0.625rem;
+    width: calc(35% - 5rem);
+    bottom: 0;
+    right: 0;
+    margin-right: .42rem;
 }
 
-.sendMessage button:active{
-    position: relative;
-    top: 2px;
+.sendMessage:active{
+    position: absolute;
+    right: 0;
+    bottom: -2px;
+    overflow: visible;
 }
 /*---END left panel Options---*/
 
