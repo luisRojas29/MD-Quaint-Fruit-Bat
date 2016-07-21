@@ -11,9 +11,11 @@ body{ /*Fix occasional x-axis calculation bug*/
     overflow-x: hidden;
 }
 
-#topUI{ /*Set background color, ehight, for top of page*/
+#topUI{ /*Set background color, white, for top of page*/
     background-color: #FFFFFF;
     height: auto;
+    /*Fix height error with floats*/
+    overflow: hidden; 
 }
 
 /*Generic classes for commonly used options*/
@@ -157,6 +159,7 @@ option{
     flex-flow: row wrap;
     justify-content: flex-start;
     height: 9.375rem;
+    box-sizing: border-box;
 }
 
 #defineRoles span{ /*Names of people*/
@@ -185,6 +188,7 @@ option{
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: flex-end;
+    box-sizing: border-box;
 }
 
 #defineColors span{
