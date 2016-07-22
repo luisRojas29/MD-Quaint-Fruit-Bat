@@ -7,7 +7,7 @@
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,300italic|Roboto+Slab:400,300,700,100' rel='stylesheet' type='text/css'><!--Font-->
     </head>
     <body>
-        <div id="topBackGround">
+        <div id="topUI">
             <div id="topline">
                 <img id="peopleLogo" class="floatLeft" src="images/Logov4.png">
                 <span id="collaborate" class="floatLeft">.Modern Developer</span>
@@ -69,20 +69,126 @@
                 </div>
             </div>
         </div>
-            <!--Bottom of page-->
+<!--                                                Bottom of page                                                   -->
         <div id="bottomUI">
-            <span>close settings</span>
-            <div id="panels">
-                <div id="leftPanel" class="bothPanels floatLeft">
-                    <div id="chatbox">
-                        <img id="user" class="floatLeft" src="images/userimage.jpg"/>
-                        <img id="nose" class="floatLeft" src="images/Nose.png"/>
-                        <input class="floatLeft" type="text"/>
-                        <input class="floatRight" type="submit" value="SEND">
+            <a href="#" id="closeSettings">close settings</a>
+
+            <div id="panelsLocation">
+
+                <div class="bothPanels leftPanel">
+                    <div class="panelTabs">
+                        <div class="tab" id="tabActive">
+                            <a href="#">Chat</a>
+                            <span class="close">X</span>
+                        </div>
+
+                        <div class="tab tabInactive">
+                            <a href="#">Screen Sharing</a>
+                            <span class="close">X</span>
+                        </div>
+
+                        <div class="tab-add">
+                            <a href="#">+ add panel</a>
+                        </div>
                     </div>
+
+                    <div class="panelBody">
+
+                        
+                        <div class="floatLeft commentBox">
+                            <img class="user floatLeft" src="images/userimage.jpg"/>
+                            <!--<img class="nose" class="floatLeft" src="images/Nose.png"/>-->
+                            <div class="comment">
+                                <div class="header">
+                                    <h4 class="userName">Alexander Smith</h4>
+                                    <span class="time">16 min ago</span>
+                                </div>
+                                <div class="message">
+                                    <p>LI noticed yesterday only, and before reading your article. I wonder if
+                                        they aren't only now starting to roll it out completely (and maybe
+                                        coded the feature back in November).
+                                     </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        
+                        <div class="floatLeft commentBox">
+                            <img class="user floatLeft" src="images/userimage.jpg"/>
+                            <!--<img class="nose" class="floatLeft" src="images/Nose.png"/>-->
+                            <div class="comment floatLeft">
+                                <div class="header">
+                                    <h4 class="userName">Anna Pearson</h4>
+                                    <span class="time">12 min ago</span>
+                                </div>
+                                <div class="message">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Maxime nesciunt officiis voluptas? Aperiam aspernatur dolor dolore dolorem
+                                        dolorum ducimus eius et excepturi hic id iure nisi, odit placeat quae
+                                        recusandae.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        
+                        <div class="floatRight commentBox">
+                            <img class="user floatRight" src="images/userimage.jpg"/>
+                            <!--<img class="nose" class="floatLeft" src="images/Nose.png"/>-->
+                            <div class="comment floatRight">
+                                <div class="header">
+                                    <h4 class="userName">James Morrison</h4>
+                                    <span class="time">11 min ago</span>
+                                </div>
+                                <div class="message">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Maxime nesciunt officiis voluptas? Aperiam aspernatur dolor dolore dolorem
+                                        dolorum ducimus eius et excepturi hic id iure nisi, odit placeat quae
+                                        recusandae.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                        
+                        <div class="floatLeft commentBox">
+                            <img class="user floatLeft" src="images/userimage.jpg"/>
+                            <!--<img class="nose" class="floatLeft" src="images/Nose.png"/>-->
+                            <div class="comment">
+                                <div class="header">
+                                    <h4 class="userName">Anna Pearson</h4>
+                                    <span class="time">12 min ago</span>
+                                </div>
+                                <div class="message">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Maxime nesciunt officiis voluptas? Aperiam aspernatur dolor dolore dolorem
+                                        dolorum ducimus eius et excepturi hic id iure nisi, odit placeat quae
+                                        recusandae.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+
+                    <div class="panelChat">
+                        <div id="chatbox">
+                            <img class="user floatLeft" src="images/userimage.jpg"/>
+                            <!--<img class="nose" class="floatLeft" src="images/Nose.png"/>-->
+                            <textarea class="floatLeft" type="text">Say something...</textarea>
+                        <button class="sendMessage" type="submit">SEND</button>
+                        </div>
+                    </div>
+
                 </div>
-                <div id="rightPanel" class="bothPanels floatRight">
-                </div>
+                <img id="ruler" class="bothPanels" src="images/Ruler.png"/>
+                <textarea class="bothPanels" id="rightPanel" type="text"></textarea>
+                
+
             </div>
         </div>
     </body>
