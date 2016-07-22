@@ -37,8 +37,8 @@ An explanation of how the code works in the bottom half of the page.
 
 
 - The Ruler
-	- In our HTML, our ruler has a class of ".bothPanels" and an ID of "#ruler."  In your last pull request you remove the ".bothPanels" class from the ruler.  I  understand why you did this because it's not immediately intuitive what's going on here.  Here's the deal: our ruler HAS to be the same height as our panels.  Giving it the same class as our panels accomplishes just that.  We then use our ID "#ruler" to change the width.
-		- Remember this: when given two values for the same element, CSS will always use the value adjusted last.  This is why this works.  Technically, changing the width on ".bothPanels" changes the width of the ruler, but since we have a new width rule at "#ruler" that occurs AFTER that, the borwser "fixes" this issue for us.
+	- In our HTML, our ruler has a class of ".bothPanels" and an ID of "#ruler."  In your last pull request you removed the ".bothPanels" class from the ruler.  I  understand why you did this because it's not immediately intuitive what's going on here.  Here's the deal: our ruler HAS to be the same height as our panels.  Giving it the same class as our panels accomplishes just that.  We then use our ID "#ruler" to change the width.
+		- Remember this: when given two values for the same element, CSS will always use the value adjusted last.  This is why this works.  Technically, changing the width on ".bothPanels" changes the width of the ruler, but since we have a new width rule at "#ruler" that occurs AFTER that, the browser "fixes" this issue for us.
 	- TRY THIS:  Remove class ".bothPanels" from the ruler in HTML.  Now, go back to CSS and change the height in class ".bothPanels."  You'll see the ruler now longer adjust to our panels.
 
 - The Left Panel
