@@ -245,7 +245,7 @@ option{
 #ruler{ /*Ruler slides between the panels*/
 /*HTML uses class "bothPanels" to ensure height
 is equal to panels.  Width changed here.*/
-    width: 2.5%;
+    width: 7.5%;
 }
 /*---END Options for BOTH Panels---*/
 
@@ -447,7 +447,15 @@ img.user{
     resize: none;
 }
 
+.panelBodyEditor{
+    overflow-y: auto;
+}
 
+.code-editor{
+    width: 90%;
+    height: 25em;
+    border: 0px;
+}
 
 /*OLD CODE*/
 
