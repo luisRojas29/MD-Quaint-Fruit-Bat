@@ -231,7 +231,7 @@ option{
     overflow: hidden; /*Fixes float height issue*/
 }
 
-.bothPanels{ /*Set height of width of panels and insure they are of equal size*/
+.boxing{ /*Set height of width of panels and insure they are of equal size*/
     height: 31.25rem;
     width: 47.5%;
     float: left;
@@ -240,12 +240,10 @@ option{
     box-sizing: border-box; 
 }
 
-
-
 #ruler{ /*Ruler slides between the panels*/
 /*HTML uses class "bothPanels" to ensure height
 is equal to panels.  Width changed here.*/
-    width: 2.5%;
+    width: 7.5%;
 }
 /*---END Options for BOTH Panels---*/
 
@@ -254,6 +252,7 @@ is equal to panels.  Width changed here.*/
 /*--Tabs Options--*/
 /*--Subset of left panel options--*/
 .panelTabs{ /*Block that displays panel tabs*/
+    background: #F3F8FA;
     display: block;
     height: 10%;
 }
@@ -261,12 +260,12 @@ is equal to panels.  Width changed here.*/
 .tab{ /*Generic options for all tabs*/
     display: inline-block;
     text-align: center;
+    padding:10px;
     width: 30%;
     height: 50%;
 }
 
 .tab a{
-    color: black;
     text-decoration: none;
 }
 
@@ -291,10 +290,15 @@ is equal to panels.  Width changed here.*/
     margin-right: 0.3125rem;
 }
 
+.tab-add{
+    overflow: hidden;
+}
+
 .tab-add a{ /*Options to add an additional tab*/
-    margin-right: 0.3125rem;
-    float: right;
     color: #6C84DC;
+    float: right;
+    margin-right: 0.3125rem;
+    padding:10px;
     text-decoration: none;
 }
 /*--End Tab options--*/
@@ -329,8 +333,32 @@ img.user{
     width: 12px;
 }*/
 
+.nocolor{
+    border:1px solid #E1E7EB;
+}
+
+.color-inactive{
+    color: #BCBCBC;
+}
+
+.color1{
+    background: rgba(116,161,233,.2);
+}
+
+.color1-name{
+    color: rgba(116,161,233,1);
+}
+
+.color2{
+    background: rgba(221,119,203,.2);
+}
+
+.color2-name{
+    color: rgba(221,119,203,1);
+}
+
 .comment{
-    background: #DD77CB;
+    /*background: #DD77CB;*/
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
@@ -421,7 +449,15 @@ img.user{
     resize: none;
 }
 
+.panelBodyEditor{
+    overflow-y: auto;
+}
 
+.code-editor{
+    width: 90%;
+    height: 28em;
+    border: 0px;
+}
 
 /*OLD CODE*/
 

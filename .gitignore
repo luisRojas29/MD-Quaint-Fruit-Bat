@@ -2,5 +2,6 @@
 
 # IntelliJ project files
 .idea
+.idea/*
 *.iml
-.gitignore
+.DS_Store
