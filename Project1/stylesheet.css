@@ -231,7 +231,7 @@ option{
     overflow: hidden; /*Fixes float height issue*/
 }
 
-.bothPanels{ /*Set height of width of panels and insure they are of equal size*/
+.boxing{ /*Set height of width of panels and insure they are of equal size*/
     height: 31.25rem;
     width: 47.5%;
     float: left;
@@ -239,8 +239,6 @@ option{
     /*Fix differences in element border calculations*/
     box-sizing: border-box; 
 }
-
-
 
 #ruler{ /*Ruler slides between the panels*/
 /*HTML uses class "bothPanels" to ensure height
@@ -290,6 +288,10 @@ is equal to panels.  Width changed here.*/
 .close{ /*"X" closes an open tab.*/
     float: right;
     margin-right: 0.3125rem;
+}
+
+.tab-add{
+    overflow: hidden;
 }
 
 .tab-add a{ /*Options to add an additional tab*/
@@ -453,7 +455,7 @@ img.user{
 
 .code-editor{
     width: 90%;
-    height: 25em;
+    height: 28em;
     border: 0px;
 }
 
