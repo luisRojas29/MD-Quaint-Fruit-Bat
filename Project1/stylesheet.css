@@ -233,7 +233,7 @@ option{
 
 .boxing{ /*Set height of width of panels and insure they are of equal size*/
     height: 31.25rem;
-    width: 47.5%;
+    width: 50%;
     float: left;
     background-color: white;
     /*Fix differences in element border calculations*/
@@ -243,7 +243,9 @@ option{
 #ruler{ /*Ruler slides between the panels*/
 /*HTML uses class "bothPanels" to ensure height
 is equal to panels.  Width changed here.*/
-    width: 2.5%;
+    width: 5%;
+    float: left;
+    height: 100%;
 }
 /*---END Options for BOTH Panels---*/
 
@@ -254,14 +256,15 @@ is equal to panels.  Width changed here.*/
 .panelTabs{ /*Block that displays panel tabs*/
     background: #F3F8FA;
     display: block;
-    height: 10%;
+    height: 5%;
+    overflow-y: hidden;
 }
 
 .tab{ /*Generic options for all tabs*/
     display: inline-block;
     text-align: center;
-    width: 30%;
-    height: 50%;
+    width: 35%;
+    height: 100%;
 }
 
 .tab a{
@@ -301,7 +304,7 @@ is equal to panels.  Width changed here.*/
 .panelBody{ 
     background: white;
     overflow-y: scroll;
-    height: 62%;
+    height: 65%;
 }
 
 .commentBox{
@@ -391,7 +394,7 @@ img.user{
 .panelChat{
     background: white;
     border-top: 0.0625rem solid darkgray;
-    height: 28%;
+    height: 30%;
 }
 
 #chatbox{
@@ -426,6 +429,7 @@ img.user{
     bottom: 0;
     right: 0;
     margin-right: .42rem;
+    text-align: center;
 }
 
 .sendMessage:active{
@@ -437,10 +441,16 @@ img.user{
 /*---END left panel Options---*/
 
 /*---Right Panel Options---*/
-#rightPanel{;
-    border: none;
-    background-image: none;
+#rightPanelBody{
+    height: 95%;
+}
+
+#rightPanelBody textarea{
+    box-sizing: border-box;
+    height: 100%;
+    width: 95%;
     resize: none;
+    border: none;
 }
 
 /*OLD CODE*/
