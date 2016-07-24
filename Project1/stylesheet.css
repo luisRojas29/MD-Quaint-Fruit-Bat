@@ -231,7 +231,7 @@ option{
     overflow: hidden; /*Fixes float height issue*/
 }
 
-.boxing{ /*Set height of width of panels and insure they are of equal size*/
+.bothPanels{ /*Set height of width of panels and insure they are of equal size*/
     height: 31.25rem;
     width: 50%;
     float: left;
