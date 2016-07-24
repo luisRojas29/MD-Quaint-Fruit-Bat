@@ -243,7 +243,7 @@ option{
 #ruler{ /*Ruler slides between the panels*/
 /*HTML uses class "bothPanels" to ensure height
 is equal to panels.  Width changed here.*/
-    width: 7.5%;
+    width: 2.5%;
 }
 /*---END Options for BOTH Panels---*/
 
@@ -260,7 +260,6 @@ is equal to panels.  Width changed here.*/
 .tab{ /*Generic options for all tabs*/
     display: inline-block;
     text-align: center;
-    padding:10px;
     width: 30%;
     height: 50%;
 }
@@ -290,15 +289,10 @@ is equal to panels.  Width changed here.*/
     margin-right: 0.3125rem;
 }
 
-.tab-add{
-    overflow: hidden;
-}
-
 .tab-add a{ /*Options to add an additional tab*/
     color: #6C84DC;
     float: right;
     margin-right: 0.3125rem;
-    padding:10px;
     text-decoration: none;
 }
 /*--End Tab options--*/
@@ -447,16 +441,6 @@ img.user{
     border: none;
     background-image: none;
     resize: none;
-}
-
-.panelBodyEditor{
-    overflow-y: auto;
-}
-
-.code-editor{
-    width: 90%;
-    height: 28em;
-    border: 0px;
 }
 
 /*OLD CODE*/
