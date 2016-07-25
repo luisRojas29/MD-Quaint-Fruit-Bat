@@ -1,0 +1,127 @@
+# @font-face
+
+*Css rule that allows the use of fonts online for get embedded in web pages.*
+
+It calls a service from a server, injecting the font to the html document, eliminating the use of the users preinstalled fonts in their computers.
+
+## Syntax
+For using font-face, first we declare where the font comes from:
+
+```
+@font-face {
+    font-family: DeliciousRoman;
+    src: url(http://www.font-face.com/fonts/delicious/Delicious-Roman.otf);
+    font-weight:400; //Property
+}
+```
+
+Then we can use it, for example in a <p\> tag:
+
+```
+p {
+    font-family: DeliciousRoman, Helvetica, Arial, sans-serif;
+}
+```
+
+## Values
+
+- **src** The URL remote font file location, also it is used as the local name. If not font is found, ill searching until a source is found.
+
+- **font-family** The name that will be used for font properties.
+
+- **font-stretch** Defines the stretch style of the font. The values are:
+    - normal
+    - condensed
+    - ultra-condensed
+    - extra-condensed
+    - semi-condensed
+    - expanded
+    - semi-expanded
+    - extra-expanded
+    - ultra-expanded
+
+- **font-style** Defines the style of the font. The values are:
+    - normal
+    - italic
+    - oblique
+
+- **font-weight** Defines the boldness of the font. The values are:
+    - normal
+    - bold
+    - 100
+    - 200
+    - 300
+    - 400
+    - 500
+    - 600
+    - 700
+    - 800
+    - 900
+
+## Browser Compatibility
+
+- Chrome
+- Android
+- Firefox (Gecko)
+- Firefox Mobile (Gecko)
+- Internet Explorer (IE)
+- IE Phone
+- Opera
+- Opera Mobile
+- Safari (WebKit)
+- Safari Mobile
+
+
+## Example 1
+
+First of all we need to declare, we can do it in the css file. We use for example a service from google fonts.
+
+```
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+```
+
+Then we can use the font-family property in a p tag to use this font.
+
+```
+p{
+    font-family: 'Open Sans', sans-serif;
+}
+```
+
+## Example 2
+We can declare inside the head tag also.
+
+```
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<\head>
+```
+
+## Example 3
+Or we can use a font inside in our fonts directory.
+
+```
+@font-face {
+  font-family: 'fonts/MyWebFont';
+  src: url('webfont.eot'); /* IE9 Compat Modes */
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+```
+Then we can use it as a value for a specific tag.
+
+```
+h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+```
+
+## Special notes
+
+- Web fonts depend on domain restrictions.
+- MIME type of the files is not considered.

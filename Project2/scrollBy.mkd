@@ -1,0 +1,60 @@
+# window.scrollBy()
+
+*A Javascript function that scrolls the html document in pixels.*
+
+This function scrolls all the document depending on the x and y parameters passed to the function in pixels.
+
+## Is a function
+
+Yes it is.
+
+## Syntax
+
+The syntax for the window.scrollBy():
+```
+window.scrollBy(x,y);
+```
+Where x is the number of pixels scroll horizontally, while y is the number of pixels vertically.
+
+## Return value
+No return value
+
+## Browser Compatibility
+
+- Chrome
+- Firefox (Gecko)
+- Internet Explorer (IE)
+- Opera
+- Safari (WebKit)
+
+## Example
+
+We declare a function to use it, so we can call it from another element, for example a button, or an anchor tag.
+
+```
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Window ScrollBy</title>
+    </head>
+
+    <body>
+    
+        <div class="controls">
+            <button onclick="scroll(0, 50)">This goes down</button>
+            <a href="#" onclick="scroll(0, -50)">Wanna go up?</a>
+            <button onclick="scroll(100, 0)">To the right</button>
+            <a href="#" onclick="scroll(-100, 0)">To the left</a>
+        </div>
+
+        <script>
+            function scroll(x, y){
+                window.scrollBy(x,y);
+            }
+        </script>
+    </body>
+</html>
+```
+
+## Special notes
