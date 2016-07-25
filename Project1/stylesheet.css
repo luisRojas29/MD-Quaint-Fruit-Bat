@@ -144,6 +144,7 @@ option{
 .rcTitles{
     font-size: 1.375rem;
     width: 5.25rem;
+    float: left;
 }
 
 .addNew{
@@ -298,7 +299,7 @@ option{
     margin-right: 0.3125rem;
 }
 
-.tab-add a{ /*Options to add an additional tab*/
+.tab-add { /*Options to add an additional tab*/
     color: #6C84DC;
     float: right;
     margin-right: 0.3125rem;
