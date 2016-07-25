@@ -89,16 +89,19 @@ option{
 #gear{ /*top right corner icon*/
     height: 1.25rem;
     margin-left: 0.375rem;
+    float: right;
 }
 
 #peopleLogo{ /*top left corner icon*/
     height: 1.25rem;
     margin-right: 0.375rem;
+    float: left;
 }
 
 #collaborate:before{/*Add Blue text "Collaboration"*/
     content: "Collaboration";
     color: #74A1E9;
+    float: left;
 }
 
 .blockDetails{ /*Frequently used gray text descriptions*/
@@ -144,8 +147,10 @@ option{
 }
 
 .addNew{
+    color: #74A1E9;
     width: calc(100% - 5.25rem);
     text-align: right;
+    float: right;
 }
 
 #addRoles{ /*Define width of Roles div*/
@@ -316,6 +321,7 @@ img.user{
     vertical-align: top;
     width: 2.813rem;
     margin-right: 1rem;
+    float: left;
 }
 
 /*.commentBox img.nose{---Doesn't seem to do anything right now---
@@ -408,6 +414,7 @@ img.user{
 
 #chatbox textarea{
     display: inline-block;
+    float: left;
     width: calc(65% - 2.813rem);
     height: 100%;
     border: none;
