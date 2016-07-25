@@ -66,6 +66,13 @@ input { /*Add pencil image to inputs, remove border*/
     margin-bottom: 5vh;
 }
 
+.blockDetails{ /*Frequently used gray text descriptions*/
+    display: inline-block;
+    width: 100%;
+    color: #BCBCBC;
+    font-size: 0.75rem;
+}
+
 /******************************
                 TOP LINE
 Very top of page.  Provides page
@@ -97,33 +104,14 @@ in top-right corner
     color: #74A1E9;
     float: left;
 }
-/***END Top Line Option***/
+/***END Top Line Options***/
 
-/*Selection Box Options*/
-select{
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-color: #F4F5F7;
-    background-image: url(images/pencil.png);
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: 0.75rem;
-    border: none;
-}
-
-option{
-    text-align: center;
-}
-/*END Select Options*/
-
-.blockDetails{ /*Frequently used gray text descriptions*/
-    display: inline-block;
-    width: 100%;
-    color: #BCBCBC;
-    font-size: 0.75rem;
-}
-
-/*Options for Modifiable Room Name Section*/
+/******************************
+                ROOM NAME
+Allows user to adjust the name of 
+the room and details of the
+chatroom.
+*******************************/
 #roomName{ /*Div options*/
     display: block;
     width: 80vw;
@@ -144,6 +132,24 @@ option{
     height: auto;
 }
 /*END Modifiable Room Name Section Options*/
+
+/*Selection Box Options*/
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #F4F5F7;
+    background-image: url(images/pencil.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 0.75rem;
+    border: none;
+}
+
+option{
+    text-align: center;
+}
+/*END Select Options*/
+
 
 #rolesAndColors{ /*Define total page width of Colors/Roles Divs*/
     display: block;
