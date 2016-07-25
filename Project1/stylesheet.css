@@ -1,6 +1,7 @@
-/*************************************************************************************************
-                                                                        TOP HALF OF PAGE
-*************************************************************************************************/
+/************************************************************************************************
+                                                                    FULL PAGE OPTIONS
+Options that affect the full page.
+************************************************************************************************/
 html, body{
     font-family: "Roboto";
     background-color: #F3F8FA;
@@ -11,14 +12,11 @@ body{ /*Fix occasional x-axis calculation bug*/
     overflow-x: hidden;
 }
 
-#topUI{ /*Set background color, white, for top of page*/
-    background-color: #FFFFFF;
-    height: auto;
-    /*Fix height error with floats*/
-    overflow: hidden; 
-}
 
-/*Generic classes for commonly used options*/
+/****************************
+Generic classes for quick select of
+ common options
+*****************************/
 
 .italic{
     font-style: italic;
@@ -35,10 +33,20 @@ body{ /*Fix occasional x-axis calculation bug*/
 .modernGray{ /*Quick select of Modern Developer gray*/
     color: #EFF1F2;
 }
+/*****END Generic Options*****/
 
-/*END Generic Options*/
+/*************************************************************************************************
+                                                                        TOP HALF OF PAGE
+The top half of the page allows the user to change the room name, the page layout colors, and the roles of active 
+users.
+*************************************************************************************************/
+#topUI{ /*Set background color, white, for top of page*/
+    background-color: #FFFFFF;
+    height: auto;
+    overflow: hidden;  /*Fix height error with floats*/
+}
 
-input { /*Add pencil to inputs, remove border*/
+input { /*Add pencil image to inputs, remove border*/
     background-image: url(images/pencil.png);
     background-position: right;
     background-repeat: no-repeat;
@@ -49,23 +57,6 @@ input { /*Add pencil to inputs, remove border*/
     background-color: #EFF1F2;
 }
 
-/*Selection Box Options*/
-select{
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-color: #F4F5F7;
-    background-image: url(images/pencil.png);
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: 0.75rem;
-    border: none;
-}
-
-option{
-    text-align: center;
-}
-/*END Select Options*/
-
 .line{ /*Gray line used to separate the divs.  I use a straight, gray line
     and modify the height.  See /images/line.png*/
     display: block;
@@ -75,7 +66,14 @@ option{
     margin-bottom: 5vh;
 }
 
-#topline{
+/******************************
+                TOP LINE
+Very top of page.  Provides page
+name and allows access to settings
+in top-right corner
+*******************************/
+
+#topline{ /*Parent div*/
     margin: 0% auto;
     width: 85vw;
      /*Allow padding change without changing background*/
@@ -99,6 +97,24 @@ option{
     color: #74A1E9;
     float: left;
 }
+/***END Top Line Option***/
+
+/*Selection Box Options*/
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #F4F5F7;
+    background-image: url(images/pencil.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 0.75rem;
+    border: none;
+}
+
+option{
+    text-align: center;
+}
+/*END Select Options*/
 
 .blockDetails{ /*Frequently used gray text descriptions*/
     display: inline-block;
