@@ -359,19 +359,19 @@ option{
     color: #BCBCBC;
 }
 
-.color1{
+.blueBox{
     background: rgba(116,161,233,.2);
 }
 
-.color1-name{
+.blueBox-name{
     color: rgba(116,161,233,1);
 }
 
-.color2{
+.pinkBox{
     background: rgba(221,119,203,.2);
 }
 
-.color2-name{
+.pinkBox-name{
     color: rgba(221,119,203,1);
 }
 
