@@ -383,21 +383,32 @@ option{
 }
 
 .header{
+    display: block;
     margin-top: 0.3125rem;
-    padding:  0.625rem;
+    height: 3rem;
+    width: 100%;
 }
 
 .userName{
-    display: inline;
+    display: inline-block;
     font-weight: 400;
+    width: 47.5%;
 }
 
 .time{
-    display: inline;
+    display: inline-block;
     color: #BCBCBC;
-    float: right;
+    width: 47.5%;
     font-size: 0.8125rem;
-    margin-right: 0.625rem;
+    text-align: right;
+}
+
+.commentBoxRight .userName{
+    text-align: right;
+}
+
+.commentBoxRight .time{
+    text-align: left;
 }
 
 .message{
