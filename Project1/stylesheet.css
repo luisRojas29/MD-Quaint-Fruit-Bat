@@ -24,10 +24,6 @@ body{ /*Fix occasional x-axis calculation bug*/
     font-style: italic;
 }
 
-.floatLeft{ /*Generic shortcut to float items left*/
-    float: left;
-}
-
 .floatRight{ /*Generic shortcut to float items right*/
     float: right;
 }
