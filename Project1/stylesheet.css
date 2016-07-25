@@ -393,18 +393,23 @@ option{
 }
 
 .time{
+    display: inline;
     color: #BCBCBC;
     float: right;
     font-size: 0.8125rem;
     margin-right: 0.625rem;
 }
 
-
 .message{
     width: 90%;
     margin: 0 auto;
     font-size: 0.875rem;
     line-height: 150%;
+    text-align: left;
+}
+
+.commentBoxRight .message{
+    text-align: right;
 }
 
 .panelChat{
