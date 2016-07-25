@@ -131,7 +131,47 @@ chatroom.
     width: 9.563rem;
     height: auto;
 }
-/*END Modifiable Room Name Section Options*/
+/***END Room Name Options***/
+
+/******************************
+            ROLES AND COLORS
+The roles and colors section of the 
+page and allows users to change the 
+roles of the users in chat as well as 
+modify page color schemes.
+
+It consist of two panels of sharing
+horizontal space on the page.
+Many classes are shared between
+both panels.
+******************************/
+#rolesAndColors{ /*Parent div.
+    Define total page width of Colors/Roles Divs*/
+    display: block;
+    width: 80vw;
+    margin: 0 auto;
+     /*Height declare fixes alignment issue but not sure why auto height 
+    does not work.  Could cause scaling issues down the road*/
+    /*Note, probably because of floats.  Possibly
+    Could be fixed with overflow-y: hidden*/
+    height: 15.63rem;
+}
+
+ /*Define font options for ROLES/COLORS Titles*/
+.rcTitles{
+    font-size: 1.375rem;
+    width: 5.25rem;
+    float: left;
+}
+
+/*Text on top right of panels allowing user to
+add additonal roles and/or colors*/
+.addNew{
+    color: #74A1E9;
+    width: calc(100% - 5.25rem);
+    text-align: right;
+    float: right;
+}
 
 /*Selection Box Options*/
 select{
@@ -150,27 +190,6 @@ option{
 }
 /*END Select Options*/
 
-
-#rolesAndColors{ /*Define total page width of Colors/Roles Divs*/
-    display: block;
-    width: 80vw;
-    margin: 0 auto;
-     /*Fixes alignment issue but not sure why auto height isn't work.  Could cause scaling issues down the road*/
-    height: 15.63rem;
-}
-
-.rcTitles{
-    font-size: 1.375rem;
-    width: 5.25rem;
-    float: left;
-}
-
-.addNew{
-    color: #74A1E9;
-    width: calc(100% - 5.25rem);
-    text-align: right;
-    float: right;
-}
 
 #addRoles{ /*Define width of Roles div*/
     width: 47.5%;
