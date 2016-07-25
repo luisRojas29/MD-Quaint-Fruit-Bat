@@ -155,6 +155,7 @@ option{
 
 #addRoles{ /*Define width of Roles div*/
     width: 47.5%;
+    float: left;
 }
 
 /*Allow user to define ROLES*/
@@ -184,6 +185,7 @@ option{
 /*define width of colors div*/
 #addColors{
     width: 47.5%;
+    float: right;
 }
 
 #defineColors{
