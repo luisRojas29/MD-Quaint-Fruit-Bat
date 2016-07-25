@@ -325,6 +325,12 @@ option{
 
 .commentBoxRight img{
     float: right;
+    margin-left: 1rem;
+    margin-right: 0;
+}
+
+.commentBoxRight .comment {
+    float: right;
 }
 
 .user{
@@ -419,12 +425,13 @@ option{
 
 #chatbox img{
     display: inline-block;
+    margin-left: 0.625rem;
 }
 
 #chatbox textarea{
     display: inline-block;
     float: left;
-    width: calc(65% - 2.813rem);
+    width: calc(65% - 3.438rem);
     height: 100%;
     border: none;
     background-color: #F7F7F7;
