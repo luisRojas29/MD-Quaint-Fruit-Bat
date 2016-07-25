@@ -150,11 +150,8 @@ both panels.
     display: block;
     width: 80vw;
     margin: 0 auto;
-     /*Height declare fixes alignment issue but not sure why auto height 
-    does not work.  Could cause scaling issues down the road*/
-    /*Note, probably because of floats.  Possibly
-    Could be fixed with overflow-y: hidden*/
-    height: 15.63rem;
+    overflow-y: hidden; /*Fix height cal w/ floats*/
+    height: auto;
 }
 
  /*Define font options for ROLES/COLORS Titles*/
