@@ -210,6 +210,7 @@ option{
 
 #bottomUI{ /*Keep percentages based on device width*/
     width: 100vw;
+    height: auto;
 }
 
 #closeSettings{ /*Display close settings option*/
@@ -241,8 +242,6 @@ option{
 }
 
 #ruler{ /*Ruler slides between the panels*/
-/*HTML uses class "bothPanels" to ensure height
-is equal to panels.  Width changed here.*/
     width: 5%;
     float: left;
     height: 100%;
@@ -398,8 +397,8 @@ img.user{
 }
 
 #chatbox{
-    position: relative;
     display: block;
+    position: relative;
     overflow: hidden;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -407,36 +406,40 @@ img.user{
     width: 100%;
 }
 
+#chatbox img{
+    display: inline-block;
+}
+
 #chatbox textarea{
-    width: 65%;
+    display: inline-block;
+    width: calc(65% - 2.813rem);
     height: 100%;
     border: none;
     background-color: #F7F7F7;
     border-radius: 5px;
+    box-sizing: border-box;
+    resize: none;
 }
 
 .sendMessage{
     position: absolute;
-    float: right;
+    bottom: 0;
+    right: 0;
     background: #6C84DC;
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
     border-radius:5px;
     border:none;
     color: white;
-    padding: 0.9375rem;
-    width: calc(35% - 5rem);
-    bottom: 0;
-    right: 0;
-    margin-right: .42rem;
-    text-align: center;
+    min-width: calc(35% - 2.813rem);
+    width: auto;
+    height: 40%;
+    margin-right: 2.3%;
 }
 
 .sendMessage:active{
     position: absolute;
     right: 0;
     bottom: -2px;
-    overflow: visible;
+    
 }
 /*---END left panel Options---*/
 
