@@ -311,8 +311,6 @@ option{
 }
 
 img.user{
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
     border-radius: 3px;
     height: 2.813rem;
     vertical-align: top;
@@ -355,8 +353,6 @@ img.user{
 
 .comment{
     /*background: #DD77CB;*/
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
     border-radius: 5px;
     display: inline-block;
     width: 70%;
@@ -458,19 +454,12 @@ img.user{
 
 /*OLD CODE*/
 
-/*
-#chatbox{
-    height: 22%;
-    position: absolute;
-    bottom: 0;
-    width: 47.5%;
-    border-top: 1px solid #F8F8F8;
-}
 
+/*
 #nose{
     height: 40%;
     width: 12px;
     position: relative;
     margin-top: 3%;
     margin-left: 1%;
-}
+}*/
