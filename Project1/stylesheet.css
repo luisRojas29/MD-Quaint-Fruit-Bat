@@ -170,6 +170,11 @@ add additonal roles and/or colors*/
     float: right;
 }
 
+.addNew + .blockDetails{ /*Fix rare scalling issue that causes different heights*/
+    height: 1.6rem;
+    overflow-y: hidden;
+}
+
 /*Selection Box Options*/
 select{
     -webkit-appearance: none;
