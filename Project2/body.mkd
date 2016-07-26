@@ -1,0 +1,76 @@
+# <body\>
+
+*This is where the content of the HTML content goes.*
+
+This tag (also commonly referred as the body element) contains all the other tags and elements, such as text, images, divs, links, tables, lists, headings, etc.
+
+It only can be only one body element in a document, generally speaking this is considered as the main wrap where the full content will live.
+
+## Is a tag
+
+Yes, but is also considerated as an element.
+
+## Syntax
+
+The syntax for the body tag is:
+```
+<body>
+</body>
+```
+
+## Attributes
+
+- **onafterprint** Function to call after the user has printed the document.
+- **onbeforeprint** Function to call when the user requests printing of the document.
+- **onbeforeunload** Function to call when the document is about to be unloaded.
+- **onblur** Function to call when the document loses focus.
+- **onerror** Function to call when the document fails to load properly.
+- **onfocus** Function to call when the document receives focus.
+- **onhashchange** Function to call when the fragment identifier part (starting with the hash ('#')         character) of the document's current address has changed.
+- **onlanguagechange** Function to call when the preferred languages changed.
+- **onload** Function to call when the document has finished loading.
+- **onmessage** Function to call when the document has received a message.
+- **onoffline** Function to call when network communication has failed.
+- **ononline** Function to call when network communication has been restored.
+- **onpopstate** Function to call when the user has navigated session history.
+- **onredo** Function to call when the user has moved forward in undo transaction history.
+- **onresize** Function to call when the document has been resized.
+- **onstorage** Function to call when the storage area has changed.
+- **onundo** Function to call when the user has moved backward in undo transaction history.
+- **onunload** Function to call when the document is going away.
+
+
+## Browser Compatibility
+
+- Chrome
+- Android
+- Firefox (Gecko)
+- Firefox Mobile (Gecko)
+- Internet Explorer (IE)
+- IE Phone
+- Opera
+- Opera Mobile
+- Safari (WebKit)
+- Safari Mobile
+
+
+## Example
+
+As the body tag is unique and wraps all the content in the html, it doesn't need too much presentation.
+
+```
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Here goes the title</title>
+    </head>
+    <body>
+        <!-- All the content is here-->
+    </body>
+</html>
+```
+
+## Special notes
+
+It's always the **second child** of the <html\> element
