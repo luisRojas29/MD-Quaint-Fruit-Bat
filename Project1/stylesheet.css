@@ -170,7 +170,10 @@ add additonal roles and/or colors*/
     float: right;
 }
 
-.addNew + .blockDetails{ /*Fix rare scalling issue that causes different heights*/
+.addNew + .blockDetails{ 
+        /*Fix rare scalling issue that causes different heights*/
+        /*Media Queries are a better solution and this will likely be replaced
+        When code is made more responsive.*/
     height: 1.6rem;
     overflow-y: hidden;
 }
@@ -278,7 +281,13 @@ option{
     text-decoration: none;
 }
 
-/*---Options that affect BOTH panels---*/
+/******************************
+                    BOTH PANELS
+Bottom half of the page consists of
+two panels at the bottom of the
+screen.  The folloing options
+affect both panels
+******************************/
 
 #panelsLocation{ /*Sets panels location on screen, adds bottom margin*/
     display: block;
@@ -303,12 +312,11 @@ option{
     float: left;
     height: 100%;
 }
-/*---END Options for BOTH Panels---*/
 
-/*---Left Panel Options---*/
-
-/*--Tabs Options--*/
-/*--Subset of left panel options--*/
+/*Options for TABS at the TOP of the
+panels.  Allows users to switch and add
+new tabs.  Not yet funtional and will
+require JavaScript.*/
 .panelTabs{ /*Block that displays panel tabs*/
     background: #F3F8FA;
     display: block;
@@ -324,6 +332,7 @@ option{
 }
 
 .tab a{
+        /*Remove underline*/
     text-decoration: none;
 }
 
@@ -343,7 +352,7 @@ option{
     float: left;
 }
 
-.close{ /*"X" closes an open tab.*/
+.close{ /*"X" closes an open tab.  Not yet functional*/
     float: right;
     margin-right: 0.3125rem;
 }
@@ -354,20 +363,30 @@ option{
     margin-right: 0.3125rem;
     text-decoration: none;
 }
-/*--End Tab options--*/
 
+.color-inactive{
+        /*Various gray affects*/
+    color: #BCBCBC;
+}
+/***--End Tab options--***/
 
-.panelBody{ 
+/************
+LEFT PANEL
+************/
+.panelBody{
+        /*Chat happens here*/
     background: white;
     overflow-y: scroll;
     height: 65%;
 }
 
 .commentBox{
+        /*users' image plus chat text*/
     margin: 0.625rem 0.625rem;
     float: left;
 }
 
+/*Options for when a Comment is aligned to the right*/
 .commentBoxRight{
     float: right;
 }
@@ -383,6 +402,7 @@ option{
 }
 
 .user{
+        /*Images of users*/
     border-radius: 3px;
     height: 2.813rem;
     vertical-align: top;
@@ -391,22 +411,11 @@ option{
     float: left;
 }
 
-/*.commentBox img.nose{---Doesn't seem to do anything right now---
-    color: #DD77CB;;
-    margin-right: -8px;
-    margin-top: 10px;
-    position: relative;
-    vertical-align: top;
-    width: 12px;
-}*/
-
+/*background colors for Chat Text*/
 .nocolor{
     border:1px solid #E1E7EB;
 }
 
-.color-inactive{
-    color: #BCBCBC;
-}
 
 .blueBox{
     background: rgba(116,161,233,.2);
@@ -423,15 +432,17 @@ option{
 .pinkBox-name{
     color: rgba(221,119,203,1);
 }
+/*END Background colors*/
 
 .comment{
-    /*background: #DD77CB;*/
+        /*The box chat text goes into*/
     border-radius: 5px;
     display: inline-block;
     width: 70%;
 }
 
 .header{
+        /*Header for .comment*/
     display: block;
     margin-top: 0.3125rem;
     height: 3rem;
@@ -439,12 +450,14 @@ option{
 }
 
 .userName{
+        /*Part of header*/
     display: inline-block;
     font-weight: 400;
     width: 47.5%;
 }
 
 .time{
+        /*part of header*/
     display: inline-block;
     color: #BCBCBC;
     width: 47.5%;
@@ -452,6 +465,16 @@ option{
     text-align: right;
 }
 
+.message{
+        /*Options for chat text display*/
+    width: 90%;
+    margin: 0 auto;
+    font-size: 0.875rem;
+    line-height: 150%;
+    text-align: left;
+}
+
+/*More options for when Chat area is algned right*/
 .commentBoxRight .userName{
     text-align: right;
 }
@@ -460,25 +483,20 @@ option{
     text-align: left;
 }
 
-.message{
-    width: 90%;
-    margin: 0 auto;
-    font-size: 0.875rem;
-    line-height: 150%;
-    text-align: left;
-}
-
 .commentBoxRight .message{
     text-align: right;
 }
+/*END Additonal right align options*/
 
 .panelChat{
+        /*Parent div for where user text area*/
     background: white;
     border-top: 0.0625rem solid darkgray;
     height: 30%;
 }
 
 #chatbox{
+        /*aligns elements within .panelChat*/
     display: block;
     position: relative;
     overflow: hidden;
@@ -489,11 +507,13 @@ option{
 }
 
 #chatbox img{
+        /*adjust .user class parameters*/
     display: inline-block;
     margin-left: 0.625rem;
 }
 
 #chatbox textarea{
+        /*User enters text here*/
     display: inline-block;
     float: left;
     width: calc(65% - 3.438rem);
@@ -506,6 +526,7 @@ option{
 }
 
 .sendMessage{
+        /*Button to send text.  Not functional yet.*/
     position: absolute;
     bottom: 0;
     right: 0;
@@ -520,34 +541,27 @@ option{
 }
 
 .sendMessage:active{
+        /*Create push button effect on click*/
     position: absolute;
     right: 0;
     bottom: -2px;
     
 }
-/*---END left panel Options---*/
+/***---END left panel Options---***/
 
-/*---Right Panel Options---*/
+/*************
+RIGHT PANEL
+*************/
 #rightPanelBody{
+        /*Parent div sets height of code editor based on resolution*/
     height: 95%;
 }
 
 #rightPanelBody textarea{
+        /*Code Editor  Will likely be replaced with something better during JavaScript.*/
     box-sizing: border-box;
     height: 100%;
     width: 95%;
     resize: none;
     border: none;
 }
-
-/*OLD CODE*/
-
-
-/*
-#nose{
-    height: 40%;
-    width: 12px;
-    position: relative;
-    margin-top: 3%;
-    margin-left: 1%;
-}*/
